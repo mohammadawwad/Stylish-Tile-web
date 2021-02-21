@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Stylish Tile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale="1.0">
+    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+<body class="Home">
+
+    <header>
+        <!--header info like buttons logo -->
+        <h1> <a href="index.html"><img src="img/logo.png" id="logo" alt="logo" class="logo"></a></h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+        <script>
+            //changes logo dimensions depending on screen size
+            if (screen.width < 600) {
+                document.getElementById("logo").height = "61.38";
+                document.getElementById("logo").width = "197.8";
+            }
+            if (screen.width > 800) {
+                document.getElementById("logo").height = "92.07";
+                document.getElementById("logo").width = " 296.7";
+            }
+
+        </script>
+
+    </header>
+
+    <!--Images-->
+    <section id="index-gallery-v" class="wrapper-gallery">
+        <div class="vinyl-gallery-img img1">
+            <div>
+                <a href="#">This is a Image</a>
+            </div>
+        </div>
+        <div class="vinyl-gallery-img img2">
+            <div>
+                <a href="#">This is a Image</a>
+            </div>
+        </div>
+        <div class="vinyl-gallery-img img3">
+            <div>
+                <a href="#">This is a Image</a>
+            </div>
+        </div>
+        <div class="vinyl-gallery-img img4">
+            <div>
+                <a href="#">This is a Image</a>
+            </div>
+        </div>
+        <div class="vinyl-gallery-img img5">
+            <div>
+                <a href="#">This is a Image</a>
+            </div>
+        </div>
+        <div class="vinyl-gallery-img img6">
+            <div>
+                <a href="#">This is a Image</a>
+            </div>
+        </div>
+        <div class="vinyl-gallery-img img7">
+            <div>
+                <a href="#">This is a Image</a>
+            </div>
+        </div>
+        <div class="vinyl-gallery-img img8">
+            <div>
+                <a href="#">This is a Image</a>
+            </div>
+        </div>
+        <!--Linking our gallery javascript file-->
+        <script src="css/js/gallery.js"></script>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+body.Home {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 300px;
+    position: relative;
+	animation: fadeIn 3s;
+	animation-delay: 9s;
+}
+
+
+@media screen and (min-width: 800px){
+.normal-office {
+	position: relative;
+    top: 150px;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*gallery buttons*/
+.Tiles_btn{
+	position: relative;
+	border: 2px solid black;
+	height: 110%;
+}
+
+.Vinly_btn{
+	position: relative;
+	border: 2px solid black;
+	height: 110%;
+}
+
+.Hardwood_btn{
+	position: relative;
+	border: 2px solid black;
+	height: 110%;
+}
+
+.work-content > div{
+	height: 300px;
+	display:inline-block;
+	display: flex;
+} 
+.work-content{
+	display: flex;
+	margin-top: 15%;	
+}
+
+/*how to position galleriies*/
+.left_tiles{
+    float: none;
+    display: flex;
+	position: relative;
+	margin-left: auto;
+}
+.center_vinly{
+    float: none;
+	display: flex;
+	position: relative;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.right_hardwood{
+	float: none;
+	display: flex;
+	position: relative;
+	margin-right: auto;
+}
+
+/* Photo Library Text */
+
+/* .library-content > div{
+	width: 700px;
+	height: 300px;
+	display:inline-block;
+	display: flex;
+	width: 85%;
+	margin-left: 5%;
+	margin-right: 5%;
+} 
+.library-content{
+	display: flex;
+	justify-content: space-between;
+} */
+
+
+
+/* more gallery images and affects like hovering */
+
+.work-content img {
+    transition: 1s;
+    padding: 15px;
+    width: 300px;
+}
+
+.work-content img:hover{
+	filter: grayscale(50%);
+	transform: scale(1.08);
+}
+
+.index-1 p {
+    font-size: 25px;
+    width: 75%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    padding: 15px;
+	margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background: #efeeef;
+}
+
+.footer_index{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 15%;
+	background: #111;
+}
+
+}
+
+
+
+/*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
+@media screen and (max-width: 800px){
+
+.logo,.left_tile,.center_vinly,.right_hardwood{
+	float:initial;
+	width:50%;
+	margin:0px;
+}
+	
+.normal-office {
+	position: relative;
+    top: 150px;
+    width: 100%;
+    height: auto;
+}
+
+/*gallery buttons*/
+.Tiles_btn{
+	position: relative;
+	border: 2px solid black;
+	height: 110%;
+}
+
+.Vinly_btn{
+	position: relative;
+	border: 2px solid black;
+	height: 110%;
+}
+
+.Hardwood_btn{
+	position: relative;
+	border: 2px solid black;
+	height: 110%;
+}
+
+.work-content > div{
+	
+	height: 160px;
+	display: flex;
+	
+} 
+.work-content{
+	margin-top: 25%;	
+}
+
+
+
+/*how to position galleriies*/
+.left_tiles{
+    float: none;
+    display: flex;
+	position: relative;
+	margin-inline-start: 25%;
+	margin-top: 50%;
+}
+.center_vinly{
+    float: none;
+	display: flex;
+	position: relative;
+	margin-top: 10%;
+	margin-inline-start: 25%;
+}
+.right_hardwood{
+	float: none;
+	display: flex;
+	position: relative;
+	margin-top: 10%;
+	margin-inline-start: 25%;
+}
+
+
+
+
+/* more gallery images and affects like hovering */
+.work-content img {
+    transition: 1s;
+    padding: 15px;
+	height: 150px;
+	width: 150px;
+}
+.work-content img:hover{
+	filter: grayscale(50%);
+	transform: scale(1.1);
+}
+
+/* Main Text */
+.text-index {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+}
+.index-1 p {
+	font-size: 20px;
+	position: relative;
+	text-align: center;
+	margin-top: 20%;
+	margin-bottom: 0%;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 15px;
+	color: black;
+	background: #efeeef;
+} 
+
+.footer_index{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 15%;
+	background: #111;
+}
+
+
+
+}

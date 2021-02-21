@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Stylish Tile</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tajawal&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo_favicon.png"/>
+</head>
+
+
+
+<body class="Home" id="Home">
+
+
+
+    <header id="header">
+
+        <!--Header(logo, bottuns and links to pages)-->
+        <h1> <a href="index.html"><img src="img/logo.png" alt="logo" height="0" class="logo" id="logo"></a></h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+        <script>
+            //Changes logo dimensions according to screen size
+            if (screen.width < 600) {
+                document.getElementById("logo").height = "61.38";
+                document.getElementById("logo").width = "197.8"; 
+            }
+            if (screen.width > 800) {
+                document.getElementById("logo").height = "92.07";
+                document.getElementById("logo").width = " 296.7";
+            }
+        </script>
+
+    </header>
+
+
+
+
+
+
+
+
+    <!--Home page main Picture-->
+    
+        <img src="img/office.jpg" height="400" class="normal-office">
+
+
+    <!--3 image galleries-->
+
+    <div class="work-content" id="work">
+
+
+        <div class="left_tiles">
+
+            <a href="tiles.html" class="Tiles_btn">
+                <img src="img/tile.jpg" class="tiles_pic" height="300">
+            </a>
+
+        </div>
+
+
+        <div class="center_vinly">
+
+            <a href="vinly.html" class="Vinly_btn">
+                <img src="img/Vinly.jpg" class="vinly_pic" height="300">
+            </a>
+
+        </div>
+
+
+        <div class="right_hardwood">
+
+            <a href="hardwood.html" class="Hardwood_btn">
+                <img src="img/hardwood.jpg" class="hardwood_pic" height="300" >
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Library Text -->
+    <!-- <div class="library-content" id="library-text">
+
+
+        <div class="left_text">
+            <h2 class="tile" style="font-size: 40px;">Tiles and Marble</h2>
+        </div>
+
+
+        <div class="center_text">
+            <h2 class="vinyl" style="font-size: 40px;">Vinyl</h2>
+        </div>
+
+
+        <div class="right_text">
+            <h2 class="hardwood" style="font-size: 40px;">Hardwood</h2>
+        </div>
+
+    </div> -->
+
+    <!--info on home page-->
+
+    <div class="index-1" id="info">
+        <p class="text-index">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum passages,Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum passages,Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+        </p>
+    </div>
+
+
+    <!--footer for homme page-->
+    <footer class="footer_index" id="footer">
+        <div class="main-content">
+
+            <div class="left">
+
+                <h3>Office Hours</h3>
+                <h4>
+                    Monday-Friday: 9am to 6pm <br />Weekends-Holidays: 11am to 4pm<br />
+                    <a href="https://www.google.ca/maps/place/Stylish+Tile/@49.2148857,-122.8247376,13z/data=!4m9!1m3!2m2!1stile+store!6e6!3m4!1s0x5485d7188ffcbf39:0x1f09f159e4dad9ef!8m2!3d49.2260839!4d-122.8337136" target="_blank"> Address<br /> </a>
+                    <a href="careers.html"> Careers </a>
+                </h4>
+
+            </div>
+
+            <div class="center">
+
+                <h3>What We Do</h3>
+                <h5>Hardwood | vinly | Ceramic & Porcelain Tile Floors | Laminate Flooring</h5>
+                <h6>
+                    Serving All The Lower MainLand
+                </h6>
+
+            </div>
+
+
+            <div class="right">
+
+                <h3>Social Media</h3>
+
+                <div class="social-menu">
+                    <ul>
+                        <li><a href="https://www.facebook.com/Stylish.Tile"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/constructionprotips/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+
+
+<!--Transition video when u first enter the site-->
+<!-- <body class="Video" id="Video">
+    <div class="video">
+        <video id="myVideo" width="500" muted autoplay>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div> -->
+
+    <script>
+      /*  var x = document.getElementById('myVideo');
+        var i = document.getElementById('Home');
+        var header = document.getElementById('header');
+        var office = document.getElementById('office');
+        var work = document.getElementById('work');
+        var info = document.getElementById('info');
+
+        //checks to see if you have not seen the home page in your current session
+        if (sessionStorage.getItem("isNewSession") !== 'false') {
+            //if you havent it will remove all homw page stuff a play the animation
+            i.style.overflow = "hidden";
+            header.style.visibility = "visiblie";
+            header.style.opacity = "0.55";
+            office.style.visibility = "hidden";
+            work.style.visibility = "hidden";
+            info.style.visibility = "hidden";
+            footer.style.visibility = "hidden";
+
+
+            document.getElementById('myVideo').addEventListener('ended', function (e) {
+                //once you have finished the video 
+                //remove video
+                //reveal home page
+                x.style.visibility = "hidden";
+                i.style.visibility = "visible";
+
+
+                //changes everything on the home screen to be shown
+                if (i.style.visibility === "visible") {
+                    i.style.overflow = "visible";
+                    header.style.visibility = "visible";
+                    header.style.opacity = "1";
+                    office.style.visibility = "visible";
+                    work.style.visibility = "visible";
+                    info.style.visibility = "visible";
+                    footer.style.visibility = "visible";
+                } else {
+                    //removes everything on home page
+                    i.style.visibility = "hidden";
+                    header.style.visibility = "visible";
+                    office.style.visibility = "hidden";
+                    work.style.visibility = "hidden";
+                    info.style.visibility = "hidden";
+                    footer.style.visibility = "hidden";
+                }
+
+                sessionStorage.setItem("isNewSession", "false");
+            })
+        }
+        else {
+            //removes home page animation if already seen 
+            x.style.display = "none";
+        }*/
+    </script>
+
+</body>
+
+
+
+</html>
+

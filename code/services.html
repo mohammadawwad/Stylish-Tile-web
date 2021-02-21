@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Stylish Tile</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tajawal&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/services.css">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="img/logo_favicon.png" />
+</head>
+<body class="services">
+
+	<header>
+		<!--header with logo and buttons-->
+		<h1> <a href="index.html"><img src="img/logo.png"  alt="logo" class="logo" id="logo"></a></h1>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<label for="nav-toggle" class="nav-toggle-label">
+			<span></span>
+		</label>
+
+		<script>
+			//changes logo dimenstions depending on screen size
+            if (screen.width < 600) {
+                document.getElementById("logo").height = "61.38";
+                document.getElementById("logo").width = "197.8";
+            }
+            if (screen.width > 800) {
+                document.getElementById("logo").height = "92.07";
+                document.getElementById("logo").width = " 296.7";
+            }
+
+		</script>
+	</header>
+
+	<!--Slide show-->
+	<slider>
+		<slide><p>Tounhouses</p></slide>
+		<slide><p>Homes</p></slide>
+		<slide><p>Buildings</p></slide>
+		<slide><p>Condos</p></slide>
+	</slider>
+
+
+
+	<!--Info of what we do-->
+	<div class="middle">
+
+		<p>
+			Do you need a company to come do everything you need, we do all
+			types of flooring and can customize things the way you want
+			vinyl you got it, hardwood you got it, ceramic tiles, marble tiles
+			you got it. We are fast passed and achieve the highest standerds while
+			doing everything you'r way. Contact us for more information or give us a call
+		</p>
+		<!-- <ul>
+			<li>Hardwood</li>
+			<li>Vinyl</li>
+			<li>Tiles</li>
+			<li>Marble</li>
+			<li>Crack proof</li>
+			<li>Condos</li>
+			<li>Towers</li>
+			<li>Houses</li>
+			<li>Townhouses</li>
+			<li>Townhouses</li>
+			<li>Townhouses</li>
+			<li>Townhouses</li>
+			<li>Townhouses</li>
+			<li>Townhouses</li>
+			<li>Townhouses</li>
+			<li>Townhouses</li>
+		</ul> -->
+
+	</div>
+
+	<!--2 image galleries-->
+	<div class="lower-content">
+		<div class="left_bathrooms">
+
+			<a href="bathroom.html" class="Bathrooms_btn">
+				<img src="img/bathroom.jpg" height="300">
+			</a>
+
+		</div>
+<!-- 
+		<div class="bathroom">
+			<h2>Bathrooms</h2>
+		</div> -->
+
+
+		<div class="right_rooms">
+
+			<a href="rooms.html" class="Rooms_btn">
+				<img src="img/vinly1.jpg" height="300">
+			</a>
+
+		</div>
+<!-- 
+		<div class="rooms">
+			<h2>Rooms</h2>
+		</div> -->
+
+	</div>
+
+
+	<!-----------------------Mobile version---------------------------->
+
+
+	<!--info about what the company can do for mobile view-->
+	<!-- <div class="small-middle">
+		<p>
+			Do you need a company to come do everything you need,
+			vinly you got it, hardwood you got it, ceramic tiles, you got it.
+			we are faced passed and achieve the highest standerds while
+			doing everything you'r way. Contact us for more information
+		</p>
+
+		<ul>
+			<li>Hardwood</li>
+			<li>Vinyl</li>
+			<li>Tiles</li>
+			<li>Marble</li>
+			<li>Crack proof</li>
+			<li>Condos</li>
+			<li>Towers</li>
+			<li>Houses</li>
+			<li>Townhouses</li>
+		</ul>
+	</div>
+
+	2 image galleries for mobile view
+	<div class="small-lower-content">
+		<div class="small-left_bathrooms">
+
+			<a href="bathroom.html" class="Bathroom_btn">
+				<img src="img/bathroom.jpg" height="150">
+			</a>
+
+		</div>
+
+		<div class="small-right_rooms">
+
+			<a href="rooms.html" class="Room_btn">
+				<img src="img/vinly1.jpg" height="150">
+			</a>
+
+		</div>
+
+
+	</div> -->
+
+</body>
+</html>

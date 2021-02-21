@@ -1,5 +1,5 @@
 # Stylish Tile Website
-## https://stylishtile.com
+## https://stylishtile.ca
 ## https://mohammadawwad.github.io/Stylish-Tile-web/
 Stylish Tile is  a Flooring and renovation company serving the lower mainland <br>
 I am currently developing there website from scratch using<br>

@@ -8,115 +8,189 @@ body.Home {
 
 
 @media screen and (min-width: 800px){
-.normal-office {
+/* .normal-office {
 	position: relative;
     top: 150px;
     width: 70%;
     height: auto;
     margin-left: 15%;
     margin-right: 15%;
-}
-
-/*gallery buttons*/
-.Tiles_btn{
-	position: relative;
-	border: 2px solid black;
-	height: 110%;
-}
-
-.Vinly_btn{
-	position: relative;
-	border: 2px solid black;
-	height: 110%;
-}
-
-.Hardwood_btn{
-	position: relative;
-	border: 2px solid black;
-	height: 110%;
-}
-
-.work-content > div{
-	height: 300px;
-	display:inline-block;
-	display: flex;
-} 
-.work-content{
-	display: flex;
-	margin-top: 15%;	
-}
-
-/*how to position galleriies*/
-.left_tiles{
-    float: none;
-    display: flex;
-	position: relative;
-	margin-left: auto;
-}
-.center_vinly{
-    float: none;
-	display: flex;
-	position: relative;
-	margin-left: 5%;
-	margin-right: 5%;
-}
-.right_hardwood{
-	float: none;
-	display: flex;
-	position: relative;
-	margin-right: auto;
-}
-
-/* Photo Library Text */
-
-/* .library-content > div{
-	width: 700px;
-	height: 300px;
-	display:inline-block;
-	display: flex;
-	width: 85%;
-	margin-left: 5%;
-	margin-right: 5%;
-} 
-.library-content{
-	display: flex;
-	justify-content: space-between;
 } */
 
-
-
-/* more gallery images and affects like hovering */
-
-.work-content img {
-    transition: 1s;
-    padding: 15px;
-    width: 300px;
+/*slide show for services page*/
+slider{
+	overflow: hidden;
+	height: 800px;
+	width: 100%;
+	margin-top: -43%;
+	position: absolute;
 }
 
-.work-content img:hover{
-	filter: grayscale(50%);
-	transform: scale(1.08);
+
+slider > *{
+	position: absolute;
+	display: block;
+	width: 60%;
+	height: 70%;
+	background: #1f1f1f;
+	animation: slide 12s infinite;
+	overflow: hidden;
+}
+
+slide:nth-child(1){
+	left: 0%;
+	animation-delay: -1s;
+	background-image: url(imgs/townhouse.jpg); 
+	background-position: center;
+	background-size: 100%;
+
+
+}
+slide:nth-child(2){
+	left:100%;
+	animation-delay: 2s;
+	background-image: url(imgs/house.jpg); 
+	background-position: center;
+	background-size: 100%;
+
+}
+slide:nth-child(3){
+	left: 100%;
+	animation-delay: 5s;
+	background-image: url(imgs/tower.jpg); 
+	background-position: center;
+	background-size: 100%;
+
+}
+slide:nth-child(4){
+	left: 100%;
+	animation-delay: 8s;
+	background-image: url(imgs/condo.jpeg); 
+	background-position: center;
+	background-size: 100%;
+
+}
+
+
+slide p{
+	margin-top: 170px;
+	width: 50%;
+	position: absolute;
+	right: 25%;
+	left: 25%;
+	font-family:  comfortaa;
+	font-size: 70px;
+	text-align: center;
+	display:inline-block;
+	color: dark black;
+	font-style: italic;
+	background-color: #efeeefa9;
+	border: 6px solid rgb(248, 248, 248);
+}
+@keyframes slide{
+	0%{ left: 100%; width: 100%;}
+	5%{ left: 0%;}
+	25%{ left: 0%;}
+	30%{ left: -100%; width: 100%;}
+	30.0001%{ left : -100%; width: 0%;}
+	100% {left: 100%; width :0%};
+
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+/* .index-1 h1{
+	font-size: 45px;
+	text-align: center;
+	margin-top: 5%;
 }
 
 .index-1 p {
+	display: grid;
+	grid-template-rows: min-content min-content min-content min-content min-content 1fr;
+    grid-template-columns: 100%;
     font-size: 25px;
-    width: 75%;
+    width: 25%;
     position: relative;
     text-align: center;
     display: flex;
     padding: 15px;
-	margin-top: 8%;
+	margin-top: 4%;
     margin-left: auto;
     margin-right: auto;
     color: black;
     background: #efeeef;
+} */
+
+/* Library-Button Img */
+.grid-container img {
+    transition: 1s;
+    padding: 15px;
+    width: 250px;
+}
+
+.grid-container img:hover{
+	filter: grayscale(50%);
+	transform: scale(1.08);
+}
+
+/* Photo Library */
+.grid-library .lib{
+	float: none;
+	display: flex;
+	position: relative;
+	margin: auto;
+	justify-content: center;
+}
+
+.grid-library .btn{
+	position: relative;
+	border: 2px solid black;
+}
+
+/* Intro Text */
+.grid-container {
+	display: grid;
+	grid-template-areas: 
+	'header header header'
+	'auto auto auto';
+	padding: 10px;
+	margin-top: 55%;
+	grid-gap: 10px;
+}
+
+.grid-main {
+	grid-area: header;
+	font-size: 36px;
+	text-align: center;
+	font-weight: 700;
+	padding-top: 10px;
+}
+
+.grid-title {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 25px;
+	margin-top: 10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
 }
 
 .footer_index{
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
-	height: 15%;
+	height: 30%;
 	background: #111;
 }
 
@@ -133,11 +207,91 @@ body.Home {
 	margin:0px;
 }
 	
-.normal-office {
+/* .normal-office {
 	position: relative;
     top: 150px;
     width: 100%;
     height: auto;
+} */
+
+/*slide show for services page*/
+slider{
+	overflow: hidden;
+	height: 230px;
+	width: 100%;
+	margin-top: -45%;
+	position: absolute;
+}
+
+
+slider > *{
+	position: absolute;
+	display: block;
+	width: 60%;
+	height: 70%;
+	background: #1f1f1f;
+	animation: slide 12s infinite;
+	overflow: hidden;
+}
+
+slide:nth-child(1){
+	left: 0%;
+	animation-delay: -1s;
+	background-image: url(imgs/townhouse.jpg); 
+	background-position: center;
+	background-size: 100%;
+
+
+}
+slide:nth-child(2){
+	left:100%;
+	animation-delay: 2s;
+	background-image: url(imgs/house.jpg); 
+	background-position: center;
+	background-size: 100%;
+
+}
+slide:nth-child(3){
+	left: 100%;
+	animation-delay: 5s;
+	background-image: url(imgs/tower.jpg); 
+	background-position: center;
+	background-size: 100%;
+
+}
+slide:nth-child(4){
+	left: 100%;
+	animation-delay: 8s;
+	background-image: url(imgs/condo.jpeg); 
+	background-position: center;
+	background-size: 100%;
+
+}
+
+
+slide p{
+	margin-top: 170px;
+	width: 50%;
+	position: absolute;
+	right: 25%;
+	left: 25%;
+	font-family: comfortaa;
+	font-size: 70px;
+	text-align: center;
+	display:inline-block;
+	color: dark black;
+	font-style: italic;
+	background-color: #efeeefa9;
+	border: 6px solid rgb(248, 248, 248);
+}
+
+@keyframes slide{
+	0%{ left: 100%; width: 100%;}
+	5%{ left: 0%;}
+	25%{ left: 0%;}
+	30%{ left: -100%; width: 100%;}
+	30.0001%{ left : -100%; width: 0%;}
+	100% {left: 100%; width :0%};
 }
 
 /*gallery buttons*/
@@ -166,7 +320,7 @@ body.Home {
 	
 } 
 .work-content{
-	margin-top: 25%;	
+	margin-top: 85%;	
 }
 
 
@@ -195,8 +349,6 @@ body.Home {
 }
 
 
-
-
 /* more gallery images and affects like hovering */
 .work-content img {
     transition: 1s;
@@ -220,7 +372,7 @@ body.Home {
 	font-size: 20px;
 	position: relative;
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 70%;
 	margin-bottom: 0%;
 	display: flex;
 	margin-right: auto;

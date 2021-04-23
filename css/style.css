@@ -207,7 +207,7 @@ nav a{
 	.logo{
 		position: relative;
 		grid-column: 2 / 3;
-		left: 200px;
+		left: 100px;
 		height: 80px;
 		width: auto;
 	}
@@ -223,7 +223,6 @@ nav a{
 		left: 450px;
 		opacity: 1;
 		font-size: 25px;
-		font-weight: bold;
 	}
 	nav ul{
 		display: flex;
@@ -235,14 +234,14 @@ nav a{
 	nav a::before{
 		content: '';
 		display: block;
-		height: 5px;
+		height: 3px;
 		width: 100%;
 		background-color: #444;
 		position: absolute;
-		top: -.75em;
+		top: -.1em;
 		width: 100%;
 		transform: scale(0,1);
-		transition: all ease-in-out 250ms;	
+		transition: all ease-in-out 350ms;	
 	}
 	
 	nav a:hover::before{

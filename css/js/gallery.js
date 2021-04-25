@@ -40,7 +40,7 @@ if (tileImages || hardwoodImages || vinylImages) {
 
                 //creating the next button
                 let newNextBtn = document.createElement("a");
-                let btnNextText = document.createTextNode("next");
+                let btnNextText = document.createTextNode(">");
                 newNextBtn.appendChild(btnNextText);
                 container.appendChild(newNextBtn);
                 newNextBtn.setAttribute("class", "img-btn-next");
@@ -49,7 +49,7 @@ if (tileImages || hardwoodImages || vinylImages) {
 
                 //creating the prev button
                 let newPrevBtn = document.createElement("a");
-                let btnPrevText = document.createTextNode("prev");
+                let btnPrevText = document.createTextNode("<");
                 newPrevBtn.appendChild(btnPrevText);
                 container.appendChild(newPrevBtn);
                 newPrevBtn.setAttribute("class", "img-btn-prev");

@@ -33,7 +33,7 @@ slider > *{
 	width: 60%;
 	height: 70%;
 	background: #1f1f1f;
-	animation: slide 12s infinite;
+	animation: slide 16s infinite;
 	overflow: hidden;
 }
 
@@ -44,11 +44,10 @@ slide:nth-child(1){
 	background-position: center;
 	background-size: 100%;
 
-
 }
 slide:nth-child(2){
 	left:100%;
-	animation-delay: 2s;
+	animation-delay: 3s;
 	background-image: url(imgs/house.jpg); 
 	background-position: center;
 	background-size: 100%;
@@ -56,7 +55,7 @@ slide:nth-child(2){
 }
 slide:nth-child(3){
 	left: 100%;
-	animation-delay: 5s;
+	animation-delay: 6s;
 	background-image: url(imgs/tower.jpg); 
 	background-position: center;
 	background-size: 100%;
@@ -64,7 +63,7 @@ slide:nth-child(3){
 }
 slide:nth-child(4){
 	left: 100%;
-	animation-delay: 8s;
+	animation-delay: 9s;
 	background-image: url(imgs/condo.jpeg); 
 	background-position: center;
 	background-size: 100%;
@@ -88,14 +87,30 @@ slide p{
 	border: 6px solid rgb(248, 248, 248);
 }
 @keyframes slide{
-	0%{ left: 100%; width: 100%;}
+	0%{ left: 100%; width: 100%; opacity: 1}
 	5%{ left: 0%;}
+	10%{}
+	15%{opacity: 1}
+	20%{}
 	25%{ left: 0%;}
 	30%{ left: -100%; width: 100%;}
 	30.0001%{ left : -100%; width: 0%;}
-	100% {left: 100%; width :0%};
-
+	35%{}
+	40%{}
+	45%{}
+	50%{opacity: 1}
+	55%{}
+	60%{}
+	65%{}
+	70%{}
+	75%{}
+	80%{}
+	85%{opacity: 1}
+	90%{}
+	95%{opacity: 1}
+	100% {left: 100%; width :0%; opacity: 1};
 }
+
 
 .container{
 	width: 80%;
@@ -103,11 +118,25 @@ slide p{
 }
 
 
+
+/* Intro Text */
+.grid-container {
+	display: grid;
+	grid-template-areas: 
+	'header header header'
+	'grid-title-1 grid-title-2 grid-title-3'
+	'grid-library-1 grid-library-2 grid-library-3'
+	'grid-item-1 grid-item-2 grid-item-3';
+	padding: 10px;
+	margin-top: 55%;
+	grid-gap: 10px;
+}
+
 /* Library-Button Img */
 .grid-container img {
     transition: 1s;
     padding: 15px;
-    width: 250px;
+    width: 200px;
 }
 
 .grid-container img:hover{
@@ -126,18 +155,7 @@ slide p{
 
 .grid-library .btn{
 	position: relative;
-	border: 2px solid black;
-}
-
-/* Intro Text */
-.grid-container {
-	display: grid;
-	grid-template-areas: 
-	'header header header'
-	'auto auto auto';
-	padding: 10px;
-	margin-top: 55%;
-	grid-gap: 10px;
+	border: 1px solid black;
 }
 
 .grid-main {
@@ -185,6 +203,7 @@ slide p{
 	border: 2px solid black;
 }
 
+
 /* Footer */
 .footer_index{
 	position: absolute;
@@ -206,21 +225,14 @@ slide p{
 	width:50%;
 	margin:0px;
 }
-	
-/* .normal-office {
-	position: relative;
-    top: 150px;
-    width: 100%;
-    height: auto;
-} */
 
 /*slide show for services page*/
 slider{
 	position: absolute;
 	overflow: hidden;
-	height: 230px;
+	height: 225px;
 	width: 100%;
-	margin-top: 15%;
+	margin-top: -55%;
 }
 
 
@@ -295,6 +307,25 @@ slide p{
 }
 
 
+/* Intro Text */
+.grid-container {
+	display: grid;
+	grid-template-areas: 
+	'header'
+	'grid-title-1 '
+	'grid-library-1 '
+	'grid-item-1 '
+	'grid-title-2 '
+	'grid-library-2 '
+	'grid-item-2'
+	'grid-title-3 '
+	'grid-library-3 '
+	'grid-item-3';
+	padding: 10px;
+	margin-top: 100%;
+	grid-gap: 10px;
+}
+
 /* Library-Button Img */
 .grid-container img {
     transition: 1s;
@@ -319,17 +350,6 @@ slide p{
 .grid-library .btn{
 	position: relative;
 	border: 2px solid black;
-}
-
-/* Intro Text */
-.grid-container {
-	display: grid;
-	grid-template-areas: 
-	'header header header'
-	'auto auto';
-	padding: 10px;
-	margin-top: 55%;
-	grid-gap: 10px;
 }
 
 .grid-main {
@@ -360,8 +380,8 @@ slide p{
 	position: relative;
 	transition: 0.5s;
 	width: 80%;
-	left: 40%;
-	right: 40%;
+	left: 10%;
+	right: 10%;
 	padding: 15px;
 	margin-bottom: 45px;
 	background-color: rgb(41, 122, 214);

@@ -18,7 +18,7 @@ body.Home {
 }
 .fadein img {
     position:absolute;
-	height: 550px;
+	height: 700px;
 	width: 100%;
     -webkit-animation-name: fade;
     -webkit-animation-iteration-count: infinite;
@@ -109,7 +109,7 @@ body.Home {
 	'grid-library-1 grid-library-2 grid-library-3'
 	'grid-item-1 grid-item-2 grid-item-3';
 	padding: 10px;
-	margin-top: 170px;
+	margin-top: 350px;
 	grid-gap: 10px;
 }
 

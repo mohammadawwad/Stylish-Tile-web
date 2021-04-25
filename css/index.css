@@ -12,7 +12,7 @@ body.Home {
 /*slide show for home page*/
 .fadein {
     position:absolute;
-    top: -570px;
+    top: -170px;
 	height: auto;
     width: 100%;
 }
@@ -61,6 +61,44 @@ body.Home {
 	background-size: 100%;
 }
 
+/* Overlaying Part for home page photos */
+.overlay{
+	position: relative;
+	margin-top: 200px;
+	margin-left: 25%;
+	margin-right: 25%;
+	background-color: rgba(255, 255, 255, 0.562);
+	border: 10px solid rgb(255, 255, 255);
+	padding: 15px;
+	width: 50%;
+}
+.overlay img{
+	position: relative;
+	height: 100px;
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.overlay .contact-button{
+	position: relative;
+	transition: 0.5s;
+	width: 25%;
+	margin-left: 37.5%;
+	margin-right: 37.5%;
+	padding: 10px;
+	background-color: rgb(41, 122, 214);
+	border-radius: 0%;
+	font-size: 16px;
+	box-shadow: none;
+	border: none;
+}
+.overlay .contact-button:hover{
+	color: #111;
+	transition: 0.5s;
+	background-color: transparent;
+	border: 2px solid black;
+}
 
 /* Intro Text */
 .grid-container {
@@ -71,7 +109,7 @@ body.Home {
 	'grid-library-1 grid-library-2 grid-library-3'
 	'grid-item-1 grid-item-2 grid-item-3';
 	padding: 10px;
-	margin-top: 700px;
+	margin-top: 170px;
 	grid-gap: 10px;
 }
 
@@ -182,11 +220,16 @@ body.Home {
 
 /*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
 @media screen and (max-width: 800px){
+/* Change logo aize for header */
+.logo{
+	height: 61px;
+	width: 197px;
+}
 
 /*slide show for home page*/
 .fadein {
     position:absolute;
-    top: -250px;
+    top: -190px;
 	height: auto;
     width: 100%;
 }
@@ -235,6 +278,10 @@ body.Home {
 	background-size: 100%;
 }
 
+/* Overlaying Part for home page photos */
+.overlay{
+	display: none;
+}
 
 
 /* slide show for services page
@@ -333,7 +380,7 @@ slide p{
 	'grid-library-3 '
 	'grid-item-3';
 	padding: 10px;
-	margin-top: 100%;
+	margin-top: 350px;
 	grid-gap: 10px;
 }
 
@@ -365,7 +412,7 @@ slide p{
 
 .grid-main {
 	grid-area: header;
-	font-size: 36px;
+	font-size: 24px;
 	text-align: center;
 	font-weight: 700;
 	padding-top: 10px;
@@ -390,9 +437,9 @@ slide p{
 .contact-button{
 	position: relative;
 	transition: 0.5s;
-	width: 80%;
-	left: 10%;
-	right: 10%;
+	width: 60%;
+	left: 20%;
+	right: 20%;
 	padding: 15px;
 	margin-bottom: 45px;
 	background-color: rgb(41, 122, 214);

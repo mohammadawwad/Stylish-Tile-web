@@ -44,19 +44,19 @@ body.Home {
 }
 
 #img-1 {
-	background-image: url(imgs/townhouse.jpg); 
+	background-image: url(imgs/home/main-1.jpg); 
 	background-position: center;
 	background-size: 100%;
 }
 #img-2 {
     -webkit-animation-delay: -9s;
-	background-image: url(imgs/house.jpg); 
+	background-image: url(imgs/home/main-2.jpg); 
 	background-position: center;
 	background-size: 100%;
 }
 #img-3 {
     -webkit-animation-delay: -5s;
-	background-image: url(imgs/condo.jpeg); 
+	background-image: url(imgs/home/main-3.jpg); 
 	background-position: center;
 	background-size: 100%;
 }
@@ -184,33 +184,12 @@ body.Home {
 	border: 2px solid black;
 }
 
-/* Picture With Text on Top */
-/* .normal-office {
-	position: relative;
-    top: 90px;
-    width: 100%;
-    height: auto;
-}
-
-.history{
-	position: relative;
-	text-align: center;
-	color:rgb(255, 255, 255);
-	background-color: #2644cc5b;
-}
-.history p{
-	position: relative;
-	width: 60%;
-	margin-left: 20%;
-	margin-right: 20%;
-} */
-
 /* Footer */
 .footer_index{
 	position: absolute;
-	bottom: -500px;
+	bottom: -300px;
 	width: 100%;
-	height: 30%;
+	height: 20%;
 	background: #111;
 }
 
@@ -261,19 +240,19 @@ body.Home {
 }
 
 #img-1 {
-	background-image: url(imgs/townhouse.jpg); 
+	background-image: url(imgs/home/main-1.jpg); 
 	background-position: center;
 	background-size: 100%;
 }
 #img-2 {
     -webkit-animation-delay: -9s;
-	background-image: url(imgs/house.jpg); 
+	background-image: url(imgs/home/main-2.jpg); 
 	background-position: center;
 	background-size: 100%;
 }
 #img-3 {
     -webkit-animation-delay: -5s;
-	background-image: url(imgs/condo.jpeg); 
+	background-image: url(imgs/home/main-3.jpg); 
 	background-position: center;
 	background-size: 100%;
 }
@@ -282,87 +261,6 @@ body.Home {
 .overlay{
 	display: none;
 }
-
-
-/* slide show for services page
-slider{
-	position: absolute;
-	overflow: hidden;
-	height: 225px;
-	width: 100%;
-	margin-top: -55%;
-}
-
-
-slider > *{
-	position: absolute;
-	display: block;
-	width: 100%;
-	height: 90%;
-	background: #1f1f1f;
-	animation: slide 12s infinite;
-	overflow: hidden;
-}
-
-slide:nth-child(1){
-	left: 0%;
-	animation-delay: -1s;
-	background-image: url(imgs/townhouse.jpg); 
-	background-position: center;
-	background-size: 100%;
-
-
-}
-slide:nth-child(2){
-	left:100%;
-	animation-delay: 2s;
-	background-image: url(imgs/house.jpg); 
-	background-position: center;
-	background-size: 100%;
-
-}
-slide:nth-child(3){
-	left: 100%;
-	animation-delay: 5s;
-	background-image: url(imgs/tower.jpg); 
-	background-position: center;
-	background-size: 100%;
-
-}
-slide:nth-child(4){
-	left: 100%;
-	animation-delay: 8s;
-	background-image: url(imgs/condo.jpeg); 
-	background-position: center;
-	background-size: 100%;
-
-}
-
-
-slide p{
-	margin-top: 100px;
-	width: 50%;
-	position: absolute;
-	right: 25%;
-	left: 25%;
-	font-family: comfortaa;
-	font-size: 30px;
-	text-align: center;
-	display:inline-block;
-	color: dark black;
-	font-style: italic;
-	background-color: #efeeefa9;
-	border: 6px solid rgb(248, 248, 248);
-}
-
-@keyframes slide{
-	0%{ left: 100%; width: 100%;}
-	5%{ left: 0%;}
-	25%{ left: 0%;}
-	30%{ left: -100%; width: 100%;}
-	30.0001%{ left : -100%; width: 0%;}
-	100% {left: 100%; width :0%};
-} */
 
 
 /* Intro Text */
@@ -456,14 +354,13 @@ slide p{
 }
 
 
-.footer_index{
+.footer_phone{
 	position: absolute;
-	bottom: 0px;
+	top: 90%;
 	width: 100%;
-	height: 15%;
+	height: 28%;
 	background: #111;
 }
-
 
 
 }

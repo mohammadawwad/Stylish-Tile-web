@@ -75,29 +75,9 @@ body.Home {
 .overlay img{
 	position: relative;
 	height: 100px;
-	width: 50%;
 	margin-top: 20px;
 	margin-left: 25%;
 	margin-right: 25%;
-}
-.overlay .contact-button{
-	position: relative;
-	transition: 0.5s;
-	width: 25%;
-	margin-left: 37.5%;
-	margin-right: 37.5%;
-	padding: 10px;
-	background-color: rgb(41, 122, 214);
-	border-radius: 0%;
-	font-size: 16px;
-	box-shadow: none;
-	border: none;
-}
-.overlay .contact-button:hover{
-	color: #111;
-	transition: 0.5s;
-	background-color: transparent;
-	border: 2px solid black;
 }
 
 /* Intro Text */

@@ -48,11 +48,6 @@
         opacity: 0.7;
         transition: all ease-in-out 100ms;
     }
-    /* isnt working properly */
-    /* #index-gallery-t:hover, #index-gallery-h:hover, #index-gallery-v:hover{
-        transform: scale(1.08);
-        transition: 1s;
-    } */
 
     /* Popup window when clicked*/
     .img-window{
@@ -299,7 +294,10 @@
 
 
 
-
+/* Library Wrapper */
+.wrapper-gallery{
+    margin:0 20vw;
+} 
 
 
 

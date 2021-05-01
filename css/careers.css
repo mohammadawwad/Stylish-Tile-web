@@ -1,0 +1,138 @@
+/*---------------------------------- Web View -------------------------------*/
+@media screen and (min-width: 800px){
+        
+    .career-info h2 {
+        font-size: 25px;
+        width: 50%;
+        font-weight:normal;
+        position: absolute;
+        text-align: left;
+        top: 60%;
+        left: 5%;
+        padding: 15px;
+        margin: 10px; 
+        color: black;
+    }
+
+    .career-info h1 {
+        font-size: 25px;
+        font-weight:bold;
+        width: 50%;
+        position: absolute;
+        text-align: left;
+        top: 60%;
+        left: 5%;
+        padding: 15px;
+        margin: 10px;
+        color: black;
+    }
+    .career-info h2 {
+        font-size: 25px;
+        width: 50%;
+        font-weight:normal;
+        position: absolute;
+        text-align: left;
+        top: 60%;
+        left: 5%;
+        padding: 15px;
+        margin: 10px; 
+        color: black;
+    }
+    .career_pic1 {
+        /* Full height */
+        position: absolute;
+        top: 61%;
+        right: 5%;
+    }
+    .career_pic1 img{
+        height: 290px;
+    }
+    .career_pic {
+        background-image: url(imgs/career/career.jpg);
+        height: 450px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-top: 20%;
+    }
+
+    /* Footer */
+    .footer_index{
+        position: absolute;
+        bottom: -160px;
+        width: 100%;
+        height: 20%;
+        background: #111;
+    }
+}
+
+/*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
+@media screen and (max-width: 800px){
+    .career-info h2 {
+        font-size: 25px;
+        width: 50%;
+        font-weight:normal;
+        position: absolute;
+        text-align: left;
+        top: 60%;
+        left: 5%;
+        padding: 15px;
+        margin: 10px; 
+        color: black;
+    }
+
+    .career-info h1 {
+        font-size: 25px;
+        font-weight:bold;
+        width: 80%;
+        position: absolute;
+        text-align: left;
+        top: 44%;
+        left: 2%;
+        padding: 15px;
+        margin: 10px;
+        color: black;
+    }
+    .career-info h2 {
+        font-size: 25px;
+        width: 85%;
+        font-weight:normal;
+        position: absolute;
+        text-align: left;
+        top: 44%;
+        left: 2%;
+        padding: 15px;
+        margin: 10px; 
+        color: black;
+    }
+    .career_pic1 {
+        /* Full height */
+        position: absolute;
+        top: 75%;
+        right: 5%;
+        width: 99%;
+    }
+    .career_pic1 img{
+        width: 105%;
+        height: auto;
+    }
+    .career_pic {
+        background-image: url(imgs/career/career.jpg);
+        height: 450px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-top: 20%;
+    }
+
+    .footer_phone{
+        position: absolute;
+        top: 108%;
+        width: 100%;
+        height: 45%;
+        background: #111;
+    }
+
+}

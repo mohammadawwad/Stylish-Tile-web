@@ -322,190 +322,9 @@ h6 {
 
 
 
-.career-info h2 {
-	font-size: 25px;
-	width: 50%;
-	font-weight:normal;
-	position: absolute;
-	text-align: left;
-	top: 60%;
-	left: 5%;
-	padding: 15px;
-	margin: 10px; 
-	color: black;
-}
-
-.career-info h1 {
-	font-size: 25px;
-	font-weight:bold;
-	width: 50%;
-	position: absolute;
-	text-align: left;
-	top: 60%;
-	left: 5%;
-	padding: 15px;
-	margin: 10px;
-	color: black;
-}
-.career-info h2 {
-	font-size: 25px;
-	width: 50%;
-	font-weight:normal;
-	position: absolute;
-	text-align: left;
-	top: 60%;
-	left: 5%;
-	padding: 15px;
-	margin: 10px; 
-	color: black;
-}
-.career_pic1 {
-	/* Full height */
-	position: absolute;
-	top: 61%;
-	right: 5%;
-}
-.career_pic {
-	background-image: url(imgs/career/career.jpg);
-	height: 450px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	padding-top: 20%;
-}
-
-/*interactive map on contact page*/
-.map {
-	display: flex;
-	max-width: 570px;
-	max-height: 100px;
-	margin: 0 auto;
-	border: 2px solid black;
-	margin-top: 0px;
-	margin-bottom: 350px;
-	padding-bottom: 250px;
-}
-.map-wrapper {
-	position: absolute;
-	top: 120%;
-	width: 100%;
-
-}
 
 
-/*contact form*/
-.wrapper {
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	width: 100%;
-	transform: translate(-50%, 5%);
-	max-width: 520px;
-	padding: 30px;
-	border-radius: 5px;
-	background: rgba(0,0,0,0.7); 
-	box-shadow: 0 0 10px rgba(0,0,0,0.8);
-}
-.wrapper .title h1 {
-	color: #c5ecfd;
-	text-align: center;
-	margin-bottom: 25px;
-}
-.contact-form {
-	display: flex;
-	margin: 0 auto;
-	
-}
-.input-fields {
-	display: flex;
-	flex-direction: column;
-	margin-right: 10%;
-}
 
-.input-fields,
-.msg {
-	width: 48%;
-}
-
-.input-fields .input,
-.msg textarea {
-	margin: 10px 0;
-	background: transparent;
-	border: 0px;
-	border-bottom: 2px solid #c5ecfd;
-	padding: 10px;
-	color: #c5ecfd;
-	width: 100%;
-	font-size: 16px;
-}
-button {
-	width: 100%;
-	background: #39b7dd;
-	text-align: center;
-	padding: 15px;
-	border-radius: 10px;
-	color: #fff;
-	cursor: pointer;
-	text-transform: uppercase;
-	border-top-style: hidden;
-	border-right-style: hidden;
-	border-left-style: hidden;
-}
-
-.msg textarea {
-	height: 212px;
-	font-size: 18px;
-}
-
-::-webkit-input-placeholder {
-	color: #c5ecfd;
-	font-size: 16px;
-}
-
-::-moz-placeholder {
-	color: #c5ecfd;
-}
-
-:-ms-input-placeholder {
-	color: #c5ecfd;
-}
-
-
-/*contact form on mobile view*/
-@media screen and (max-width: 600px) {
-	.wrapper {
-		position: absolute;
-		margin: 0 auto;
-		top: 70%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
-		max-width: 250px;
-		background: rgba(0,0,0,0.8);
-		padding: 30px;
-		border-radius: 5px;
-		box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	}
-	.contact-form {
-		flex-direction: column;
-	}
-
-	.msg textarea {
-		height: 80px;
-	}
-
-	.input-fields,
-	.msg {
-		width: 100%;
-	}
-	.wrapper .title h1 {
-		color: #c5ecfd;
-		text-align: center;
-		font-size: 22px;
-		margin-bottom: 25px;
-	}
-}
 
 	
 
@@ -661,19 +480,7 @@ h4 a:-webkit-any-link {
 		display: none;
 	}
 
-	.career-info p {
-		font-size: 25px;
-		width: 85%;
-		position: absolute;
-		text-align: center;
-		display: flex;
-		top: 115%;
-		left: 0;
-		padding: 15px;
-		margin: 10px;
-		color: black;
-		background-color: rgb(235, 235, 235);
-	}
+
 
 	/*Services Remove*/
 
@@ -687,12 +494,12 @@ h4 a:-webkit-any-link {
 
 	/*Remove Contact*/
 
-	.footer_contact{
+	/* .footer_contact{
 		display: none;
-	}
+	} */
 
 	/*Add Contact*/
-
+/* 
 
 	.footer_phone{
 		position: absolute;
@@ -700,7 +507,7 @@ h4 a:-webkit-any-link {
 		width: 100%;
 		height: 82%;
 		background: #111;
-	}
+	} */
 
 
 	.phone-main-content > div {
@@ -782,7 +589,7 @@ h4 a:-webkit-any-link {
 	.social-menu{
 		display: none; 
 	}
-	.career_pic1{
+	/* .career_pic1{
 		display: none;
 	}
 	.career-info h2{
@@ -790,49 +597,10 @@ h4 a:-webkit-any-link {
 	}
 	.career-info h1{
 		display: none;
-	}
+	} */
 	.footer_career{
 		display: none;
 	}
-	/*Add career*/
-	.mobile-career {
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-		width: 100%;
-		margin-top: 70%;
-	}
-	.mobile-career-info h2 {
-		font-size: 20px;
-		width: 80%;
-		font-weight: normal;
-		position: absolute;
-		text-align: left;
-		top: 32%;
-		padding: 15px;
-		margin: 5px;
-		color: black;
-	}
-
-	.mobile-career-info h1 {
-		font-size: 20px;
-		font-weight: bold;
-		width: 70%;
-		position: absolute;
-		text-align: left;
-		top: 32%;
-		padding: 15px;
-		margin: 5px;
-		color: black;
-	}
-	.footer_phone1 {
-		position: absolute;
-		top: 67%;
-		width: 100%;
-		height: 32%;
-		background: #111;
-	}
-
 }
 
 /*----------------------end of services phone version-----------------*/

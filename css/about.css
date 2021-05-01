@@ -1,15 +1,203 @@
+/*---------------------------------- Web View -------------------------------*/
+@media screen and (min-width: 800px){
+    .container {
+        position: relative;
+        text-align: center;
+    }
+    .container img{
+        opacity: 0.5;
 
-.container {
-    position: relative;
-    background-color: aqua;
-    text-align: center;
+    }
+
+    .centered .title{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 28px;
+    }
+    .centered .sub-title {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 24px;
+    }
+    .centered .text{
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 22px;
+    }
+
+    /* Certifics and Awards */
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'header header header'
+        'grid-title-1 grid-title-2 grid-title-3'
+        'grid-library-1 grid-library-2 grid-library-3'
+        'grid-item-1 grid-item-2 grid-item-3';
+        padding: 10px;
+        margin-top: 100px;
+        grid-gap: 10px;
+    }
+
+    /* Library-Button Img */
+    .grid-container img {
+        transition: 1s;
+        padding: 15px;
+        width: 200px;
+    }
+
+    .grid-container img:hover{
+        filter: grayscale(50%);
+        transform: scale(1.08);
+    }
+
+    /* Photo Library */
+    .grid-library .lib{
+        float: none;
+        display: flex;
+        position: relative;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .grid-library .btn{
+        position: relative;
+        border: 1px solid black;
+    }
+
+    .grid-main {
+        grid-area: header;
+        font-size: 36px;
+        text-align: center;
+        font-weight: 700;
+        padding-top: 10px;
+    }
+
+    .grid-title {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 25px;
+        margin-top: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
-.centered {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 32px;
+/*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
+@media screen and (max-width: 800px){
+    .container {
+        position: relative;
+        text-align: center;
+    }
+    .container img{
+        margin-top: 150px;
+        opacity: 0.5;
+    }
+
+    .centered .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 16px;
+    }
+    .centered .sub-title {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 55%;
+        color: black;
+        font-size: 14px;
+    }
+    .centered .text{
+        position: absolute;
+        top: 60%;
+        color: black;
+        font-size: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'grid-title-1 '
+        'grid-library-1 '
+        'grid-item-1 '
+        'grid-title-2 '
+        'grid-library-2 '
+        'grid-item-2'
+        'grid-title-3 '
+        'grid-library-3 '
+        'grid-item-3';
+        padding: 10px;
+        margin-top: 350px;
+        grid-gap: 10px;
+    }
+    
+    /* Library-Button Img */
+    .grid-container img {
+        transition: 1s;
+        padding: 15px;
+        width: 250px;
+    }
+    
+    .grid-container img:hover{
+        filter: grayscale(50%);
+        transform: scale(1.08);
+    }
+    
+    /* Photo Library */
+    .grid-library .lib{
+        float: none;
+        display: flex;
+        position: relative;
+        margin: auto;
+        justify-content: center;
+    }
+    
+    .grid-library .btn{
+        position: relative;
+        border: 2px solid black;
+    }
+    
+    .grid-main {
+        grid-area: header;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 700;
+        padding-top: 10px;
+    }
+    
+    .grid-title {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 25px;
+        margin-top: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
 }

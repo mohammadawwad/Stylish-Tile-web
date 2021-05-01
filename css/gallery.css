@@ -68,11 +68,27 @@
         justify-content: center;
         align-items: center;
         z-index: 100;
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 5s;
+        animation-name: fadeIn;
     }
     .img-window img{
         max-height: 80vh;
         max-width: 80vw;
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 5s;
+        animation-name: fadeIn;
     }
+
+    @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        20% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        20% {opacity: 1;}
+    }
+    
 
     /* Button Next */
     .img-btn-next{
@@ -184,11 +200,6 @@
             opacity: 0.7;
             transition: all ease-in-out 100ms;
         }
-        /* isnt working properly */
-        /* #index-gallery-t:hover, #index-gallery-h:hover, #index-gallery-v:hover{
-            transform: scale(1.08);
-            transition: 1s;
-        } */
     
         /* Popup window when clicked*/
         .img-window{
@@ -204,6 +215,9 @@
             /* justify-content: center; */
             align-items: center;
             z-index: 100;
+            -webkit-animation-name: fadeIn;
+            -webkit-animation-duration: 5s;
+            animation-name: fadeIn;
         }
         .img-window img{
             max-height: 75vh;
@@ -211,6 +225,18 @@
             margin-left: 9%;
             margin-top: -25vh;
             justify-content: center;
+            -webkit-animation-name: fadeIn;
+            -webkit-animation-duration: 5s;
+            animation-name: fadeIn;
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            20% {opacity: 1;}
+        }
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            20% {opacity: 1;}
         }
     
         /* Button Next */

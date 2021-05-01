@@ -7,7 +7,7 @@ if(isset($_POST['submit']){
 	$phone = $_POST['phone'];
 
 
-	$mailTO = "n.maalla@stylishtile.com";
+	$mailTO = "noor@stylishtile.ca";
 	$headers = "From: ".$mailFrom;
 	$txt = "Yoy have recived an e-mail from ".$name.".\n" .$phone "\n\n".$message;
 

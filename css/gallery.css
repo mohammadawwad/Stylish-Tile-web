@@ -1,33 +1,289 @@
-/*Gallery Container*/
-#index-gallery-t, #index-gallery-h, #index-gallery-v{
-    padding-top: 20%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    grid-template:
-        "img1 img2 img3 img4"
-        "img5 img6 img7 img8";
+/* ----------------------------------------------------WEB VIEW-------------------------------- */
+@media screen and (min-width: 800px){
+    /*Gallery Container*/
+    #index-gallery-t, #index-gallery-h, #index-gallery-v{
+        padding-top: 15%;
+        padding-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template:
+            "img1 img2 img3 img4" 
+            "img5 img6 img7 img8"
+            "img9 img10 img11 img12"
+            "img13 img14 img15 img16"
+            "img17 img18 img19 img20"
+            "img21 img22 img23 img24"
+            ;
+    }
+
+    #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-v .vinyl-gallery-img{
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+
+
+    /* Gallery image styling*/
+    .tile-gallery-img div , .hardwood-gallery-img div, .vinyl-gallery-img div{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tile-gallery-img a , .hardwood-gallery-img a , .vinyl-gallery-img a{
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .vinyl-gallery-img div:hover{
+        opacity: 0.7;
+        transition: all ease-in-out 100ms;
+    }
+    /* isnt working properly */
+    /* #index-gallery-t:hover, #index-gallery-h:hover, #index-gallery-v:hover{
+        transform: scale(1.08);
+        transition: 1s;
+    } */
+
+    /* Popup window when clicked*/
+    .img-window{
+        margin-top: 5%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .img-window img{
+        max-height: 80vh;
+        max-width: 80vw;
+    }
+
+    /* Button Next */
+    .img-btn-next{
+        display: block;
+        padding: 15px 20px;
+        border-radius: 50%;
+        background-color: white;
+        position: fixed;
+        top: 68vh;
+        z-index: 500;
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+    .img-btn-next:hover {
+        opacity: 0.7;
+        transition: all ease-in-out 100ms;
+        transform: scale(1.08);
+    }
+    .img-btn-next:active{
+        opacity: 0.7;
+        transition: all ease-in-out 100ms;
+        transform: scale(0.95);
+        color: rgb(85, 109, 189);
+    }
+
+    /* Button Prev */
+    .img-btn-prev {
+        display: block;
+        padding: 15px 20px;
+        border-radius: 50%;
+        background-color: white;
+        position: fixed;
+        top: 68vh;
+        z-index: 500;
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+    .img-btn-prev:hover {
+        opacity: 0.7;
+        transition: all ease-in-out 100ms;
+        transform: scale(1.08);
+    }
+    .img-btn-prev:active{
+        opacity: 0.7;
+        transition: all ease-in-out 100ms;
+        transform: scale(0.95);
+        color: rgb(85, 109, 189);
+    }
+
 }
 
-#index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-v .vinyl-gallery-img{
-    width: 100%;
-    height: 150px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
+/*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
+@media screen and (max-width: 800px){
+        /*Gallery Container*/
+        #index-gallery-t, #index-gallery-h, #index-gallery-v{
+            position: relative;
+            padding-top: 30%;
+            padding-bottom: 20%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 15px;
+            grid-template:
+                "img1 img2" 
+                "img3 img4"
+                "img5 img6"
+                "img7 img8"
+                "img9 img10"
+                "img11 img12"
+                "img13 img14"
+                "img15 img16"
+                "img17 img18"
+                "img19 img20"
+                "img21 img22"
+                ;
+        }
+    
+        #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-v .vinyl-gallery-img{
+            width: 120px;
+            height: 120px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+    
+    
+        /* Gallery image styling*/
+        .tile-gallery-img div , .hardwood-gallery-img div, .vinyl-gallery-img div{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tile-gallery-img a , .hardwood-gallery-img a , .vinyl-gallery-img a{
+            font-size: 10px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .vinyl-gallery-img div:hover{
+            opacity: 0.7;
+            transition: all ease-in-out 100ms;
+        }
+        /* isnt working properly */
+        /* #index-gallery-t:hover, #index-gallery-h:hover, #index-gallery-v:hover{
+            transform: scale(1.08);
+            transition: 1s;
+        } */
+    
+        /* Popup window when clicked*/
+        .img-window{
+            margin-top: 5%;
+            width: 137vw;
+            height: 130vh;
+            background-color: rgba(0,0,0,0.7);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            cursor: pointer;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            z-index: 100;
+        }
+        .img-window img{
+            max-height: 75vh;
+            max-width: 75vw;
+            margin-left: 9%;
+            margin-top: -25vh;
+            justify-content: center;
+        }
+    
+        /* Button Next */
+        .img-btn-next{
+            display: block;
+            margin-right: 15px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            background-color: white;
+            position: fixed;
+            top: 50vh;
+            z-index: 500;
+            color: black;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 50px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .img-btn-next:hover {
+            opacity: 0.7;
+            transition: all ease-in-out 100ms;
+            transform: scale(1.08);
+        }
+        .img-btn-next:active{
+            opacity: 0.7;
+            transition: all ease-in-out 100ms;
+            transform: scale(0.95);
+            color: rgb(85, 109, 189);
+        }
+    
+        /* Button Prev */
+        .img-btn-prev {
+            display: block;
+            margin-left: 15px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            background-color: white;
+            position: fixed;
+            top: 50vh;
+            z-index: 500;
+            color: black;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 50px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .img-btn-prev:hover {
+            opacity: 0.7;
+            transition: all ease-in-out 100ms;
+            transform: scale(1.08);
+        }
+        .img-btn-prev:active{
+            opacity: 0.7;
+            transition: all ease-in-out 100ms;
+            transform: scale(0.95);
+            color: rgb(85, 109, 189);
+        }
 }
 
-/* --------------------------------------------------Tile Images--------------------------------------*/
+
+
+
+
+
+
+
+
+
+ /* --------------------------------------------------Tile Images--------------------------------------*/
 
 #index-gallery-t .img1{
     grid-area: img1;
     background-image: url("imgs/img/thumbs/Tiles/img1.jpg");
-}
-#index-gallery-t .img2{
-    grid-area: img2;
-    background-image: url("imgs/img/thumbs/Tiles/img2.jpg");
 }
 #index-gallery-t .img2{
     grid-area: img2;
@@ -57,15 +313,59 @@
     grid-area: img8;
     background-image: url("imgs/img/thumbs/Tiles/img8.jpg");
 }
+#index-gallery-t .img9{
+    grid-area: img9;
+    background-image: url("imgs/img/thumbs/Tiles/img9.jpg");
+}
+#index-gallery-t .img10{
+    grid-area: img10;
+    background-image: url("imgs/img/thumbs/Tiles/img10.jpg");
+}
+#index-gallery-t .img11{
+    grid-area: img11;
+    background-image: url("imgs/img/thumbs/Tiles/img11.jpg");
+}
+#index-gallery-t .img12{
+    grid-area: img12;
+    background-image: url("imgs/img/thumbs/Tiles/img12.jpg");
+}
+#index-gallery-t .img13{
+    grid-area: img13;
+    background-image: url("imgs/img/thumbs/Tiles/img13.jpg");
+}
+#index-gallery-t .img14{
+    grid-area: img14;
+    background-image: url("imgs/img/thumbs/Tiles/img14.jpg");
+}
+#index-gallery-t .img15{
+    grid-area: img15;
+    background-image: url("imgs/img/thumbs/Tiles/img15.jpg");
+}
+#index-gallery-t .img16{
+    grid-area: img16;
+    background-image: url("imgs/img/thumbs/Tiles/img16.jpg");
+}
+#index-gallery-t .img17{
+    grid-area: img17;
+    background-image: url("imgs/img/thumbs/Tiles/img17.jpg");
+}
+#index-gallery-t .img18{
+    grid-area: img18;
+    background-image: url("imgs/img/thumbs/Tiles/img18.jpg");
+}
+#index-gallery-t .img19{
+    grid-area: img19;
+    background-image: url("imgs/img/thumbs/Tiles/img19.jpg");
+}
+#index-gallery-t .img20{
+    grid-area: img20;
+    background-image: url("imgs/img/thumbs/Tiles/img20.jpg");
+}
 /* ---------------------------------Hardwood Images --------------------------*/
 
 #index-gallery-h .img1{
     grid-area: img1;
-    background-image: url("imgs/img/thumbs/Hardwood/img2.jpg");
-}
-#index-gallery-h .img2{
-    grid-area: img2;
-    background-image: url("imgs/img/thumbs/Hardwood/img2.jpg");
+    background-image: url("imgs/img/thumbs/Hardwood/img1.jpg");
 }
 #index-gallery-h .img2{
     grid-area: img2;
@@ -95,12 +395,63 @@
     grid-area: img8;
     background-image: url("imgs/img/thumbs/Hardwood/img8.jpg");
 }
+#index-gallery-h .img9{
+    grid-area: img9;
+    background-image: url("imgs/img/thumbs/Hardwood/img9.jpg");
+}
+#index-gallery-h .img10{
+    grid-area: img10;
+    background-image: url("imgs/img/thumbs/Hardwood/img10.jpg");
+}
+#index-gallery-h .img11{
+    grid-area: img11;
+    background-image: url("imgs/img/thumbs/Hardwood/img11.jpg");
+}
+#index-gallery-h .img12{
+    grid-area: img12;
+    background-image: url("imgs/img/thumbs/Hardwood/img12.jpg");
+}
+#index-gallery-h .img13{
+    grid-area: img13;
+    background-image: url("imgs/img/thumbs/Hardwood/img13.jpg");
+}
+#index-gallery-h .img14{
+    grid-area: img14;
+    background-image: url("imgs/img/thumbs/Hardwood/img14.jpg");
+}
+#index-gallery-h .img15{
+    grid-area: img15;
+    background-image: url("imgs/img/thumbs/Hardwood/img15.jpg");
+}
+#index-gallery-h .img16{
+    grid-area: img16;
+    background-image: url("imgs/img/thumbs/Hardwood/img16.jpg");
+}
+#index-gallery-h .img17{
+    grid-area: img17;
+    background-image: url("imgs/img/thumbs/Hardwood/img17.jpg");
+}
+#index-gallery-h .img18{
+    grid-area: img18;
+    background-image: url("imgs/img/thumbs/Hardwood/img18.jpg");
+}
+
+#index-gallery-h .img19{
+    grid-area: img19;
+    background-image: url("imgs/img/thumbs/Hardwood/img19.jpg");
+}
+
+#index-gallery-h .img20{
+    grid-area: img20;
+    background-image: url("imgs/img/thumbs/Hardwood/img20.jpg");
+}
+
 
 /* ---------------------------------Vinyl Images --------------------------*/
 
 #index-gallery-v .img1{
     grid-area: img1;
-    background-image: url("imgs/img/thumbs/Vinyl/img2.jpg");
+    background-image: url("imgs/img/thumbs/Vinyl/img1.jpg");
 }
 #index-gallery-v .img2{
     grid-area: img2;
@@ -133,82 +484,4 @@
 #index-gallery-v .img8{
     grid-area: img8;
     background-image: url("imgs/img/thumbs/Vinyl/img8.jpg");
-}
-
-
-
-/* Gallery image styling*/
-.tile-gallery-img div , .hardwood-gallery-img div, .vinyl-gallery-img div{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tile-gallery-img a , .hardwood-gallery-img a , .vinyl-gallery-img a{
-    font-size: 10px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.tile-gallery-img div:hover .hardwood-gallery-img div:hover, .hardwood-gallery-img div:hover{
-    opacity: 0.8;
-    transition: all ease-in-out 100ms;
-}
-
-/* Popup window when clicked*/
-.img-window{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.7);
-    position: fixed;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
-.img-window img{
-    max-height: 80vh;
-    max-width: 80vw;
-
-}
-
-/* Button Next */
-.img-btn-next{
-    display: block;
-    padding: 10px 10px;
-    border-radius: 50%;
-    background-color: white;
-    position: fixed;
-    top: 48vh;
-    z-index: 500;
-    color: black;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-.img-btn-next:hover {
-    opacity: 0.7;
-}
-
-/* Button Prev */
-.img-btn-prev {
-    display: block;
-    padding: 10px 10px;
-    border-radius: 50%;
-    background-color: white;
-    position: fixed;
-    top: 48vh;
-    z-index: 500;
-    color: black;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.img-btn-prev:hover {
-    opacity: 0.7;
 }

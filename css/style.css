@@ -170,7 +170,7 @@ nav a{
 	}
 	nav a{
 		position: relative;
-		left: 450px;
+		left: 300px;
 		opacity: 1;
 		font-size: 25px;
 	}
@@ -178,7 +178,7 @@ nav a{
 		display: flex;
 	}
 	nav li{
-		margin-left: 3em;
+		margin-left: 2.5em;
 		margin-bottom: 0;
 	}
 	nav a::before{
@@ -347,6 +347,18 @@ h6 {
 	margin: 10px;
 	color: black;
 }
+.career-info h2 {
+	font-size: 25px;
+	width: 50%;
+	font-weight:normal;
+	position: absolute;
+	text-align: left;
+	top: 60%;
+	left: 5%;
+	padding: 15px;
+	margin: 10px; 
+	color: black;
+}
 .career_pic1 {
 	/* Full height */
 	position: absolute;
@@ -354,7 +366,7 @@ h6 {
 	right: 5%;
 }
 .career_pic {
-	background-image: url(imgs/career.jpg);
+	background-image: url(imgs/career/career.jpg);
 	height: 450px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -362,6 +374,7 @@ h6 {
 	position: relative;
 	padding-top: 20%;
 }
+
 /*interactive map on contact page*/
 .map {
 	display: flex;

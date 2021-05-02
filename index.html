@@ -29,7 +29,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="tiles.html">Gallery</a></li>
+                <li><a href="gallery-hub.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
@@ -112,7 +112,46 @@
     <!-- Contact Button -->
     <a href="contact.html"/> <button class="contact-button"> Contact Us!</button> </a>
 
+	<script>
+		function clear(){
+			document.getElementById("services-container-tiles").style.display = "none";
+			document.getElementById("services-container-hardwood").style.display = "none";
+			document.getElementById("services-container-renovation").style.display = "none";
+			document.getElementById("services-container-demolition").style.display = "none";
+			document.getElementById("services-container-remodeling").style.display = "none";
+		}
 
+		function tiles(){
+			clear();
+			document.getElementById("services-container-tiles").style.display = "block";
+			document.getElementById("services-container-tiles").style.display = "grid";
+		}
+
+		function hardwood(){
+			clear();
+			document.getElementById("services-container-hardwood").style.display = "block";
+			document.getElementById("services-container-hardwood").style.display = "grid";
+		}
+
+		function renovation(){
+			clear();
+			document.getElementById("services-container-renovation").style.display = "block";
+			document.getElementById("services-container-renovation").style.display = "grid";
+		}
+
+		function demolition(){
+			clear();
+			document.getElementById("services-container-demolition").style.display = "block";
+			document.getElementById("services-container-demolition").style.display = "grid";
+		}
+
+		function remodeling(){
+			clear();
+			document.getElementById("services-container-remodeling").style.display = "block";
+			document.getElementById("services-container-remodeling").style.display = "grid";
+		}
+
+	</script>
 
     <!--footer for homme page  WEB Version-->
     <footer class="footer_index" id="footer">

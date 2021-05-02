@@ -1,10 +1,16 @@
-let tileImages = document.querySelectorAll(".tile-gallery-img");
-let hardwoodImages = document.querySelectorAll(".hardwood-gallery-img");
-let vinylImages = document.querySelectorAll(".vinyl-gallery-img");
-let getLatestOpenedImg;
-let windowWidth = window.innerWidth;
 
-if (tileImages || hardwoodImages || vinylImages) {
+//test
+
+
+
+var tileImages = document.querySelectorAll(".tile-gallery-img");
+var hardwoodImages = document.querySelectorAll(".hardwood-gallery-img");
+var vinylImages = document.querySelectorAll(".vinyl-gallery-img");
+var allImages = document.querySelectorAll(".all-gallery-img");
+var getLatestOpenedImg;
+var windowWidth = window.innerWidth;
+
+if (tileImages || hardwoodImages || vinylImages || allImages) {
 
     //Tiles
     tileImages.forEach(
@@ -184,6 +190,64 @@ if (tileImages || hardwoodImages || vinylImages) {
             }
         }
     });
+
+    //All
+    allImages.forEach(
+        function (image, index) {
+        image.onclick = function () {
+
+            //cuts the url to the neccery files
+            let getElementCss = window.getComputedStyle(image);
+            let getFullImgUrl = getElementCss.getPropertyValue("background-image");
+            let getImgUrlPos = getFullImgUrl.split("css/imgs/img/thumbs/All/");
+            
+            let setNewImgUrl = getImgUrlPos[1].replace('")', '');
+            getLatestOpenedImg = index + 1;
+            console.log(index);
+            //creates a new img wich will be the enlarged version
+            //creates a clase that can be used for css
+            let container = document.body;
+            let newImgWindow = document.createElement("div");
+            container.appendChild(newImgWindow);
+            newImgWindow.setAttribute("class", "img-window");
+            newImgWindow.setAttribute("onclick", "closeImg()");
+
+            //creates and id for the new img and sets the new url
+            let newImg = document.createElement("img");
+            newImgWindow.appendChild(newImg);
+            newImg.setAttribute("src", "css/imgs/img/full/All/" + setNewImgUrl);
+            newImg.setAttribute("id", "current-img");
+
+            document.addEventListener('keydown', function(event) {
+                if(event.key == "ArrowLeft") {
+                    changeImg(0, vinylImages);
+                }
+                else if(event.key == "ArrowRight") {
+                    changeImg(1, vinylImages);
+                }
+            });
+
+            newImg.onload = function () {
+                //creating the next button
+                let newNextBtn = document.createElement("a");
+                let btnNextText = document.createTextNode(">");
+                newNextBtn.appendChild(btnNextText);
+                container.appendChild(newNextBtn);
+                newNextBtn.setAttribute("class", "img-btn-next");
+                newNextBtn.setAttribute("onclick", "changeImg(1, allImages)");
+                newNextBtn.style.cssText = "right: 10px;";
+
+                //creating the prev button
+                let newPrevBtn = document.createElement("a");
+                let btnPrevText = document.createTextNode("<");
+                newPrevBtn.appendChild(btnPrevText);
+                container.appendChild(newPrevBtn);
+                newPrevBtn.setAttribute("class", "img-btn-prev");
+                newPrevBtn.setAttribute("onclick", "changeImg(0, allImages)");
+                newPrevBtn.style.cssText = "left: 10px;";
+            }
+        }
+    });
 }
 
 function closeImg() {
@@ -227,6 +291,9 @@ function changeImg(change, imageArray) {
     }
     if(imageArray == vinylImages){
         newImg.setAttribute("src", "css/imgs/img/full/Vinyl/img" + calcNewImg + ".jpg");
+    }
+    if(imageArray == allImages){
+        newImg.setAttribute("src", "css/imgs/img/full/All/img" + calcNewImg + ".jpg");
     }
     newImg.setAttribute("id", "current-img");
 

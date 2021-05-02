@@ -1,7 +1,7 @@
 /* ----------------------------------------------------WEB VIEW-------------------------------- */
 @media screen and (min-width: 800px){
     /*Gallery Container*/
-    #index-gallery-t, #index-gallery-h, #index-gallery-v{
+    #index-gallery-t, #index-gallery-h, #index-gallery-v , #index-gallery-all{
         padding-top: 15%;
         padding-bottom: 5%;
         display: grid;
@@ -15,10 +15,14 @@
             "img13 img14 img15 img16"
             "img17 img18 img19 img20"
             "img21 img22 img23 img24"
+            "img25 img26 img27 img28"
+            "img29 img30 img31 img32"
+            "img33 img34 img35 img36"
+            "img37 img38 img39 img40"
             ;
     }
 
-    #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-v .vinyl-gallery-img{
+    #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-v .vinyl-gallery-img, #index-gallery-all .all-gallery-img{
         width: 200px;
         height: 200px;
         background-repeat: no-repeat;
@@ -29,7 +33,7 @@
 
 
     /* Gallery image styling*/
-    .tile-gallery-img div , .hardwood-gallery-img div, .vinyl-gallery-img div{
+    .tile-gallery-img div , .hardwood-gallery-img div, .vinyl-gallery-img div , .all-gallery-img div{
         width: 100%;
         height: 100%;
         background-color: black;
@@ -38,13 +42,13 @@
         justify-content: center;
         align-items: center;
     }
-    .tile-gallery-img a , .hardwood-gallery-img a , .vinyl-gallery-img a{
+    .tile-gallery-img a , .hardwood-gallery-img a , .vinyl-gallery-img a, .all-gallery-img a{
         font-size: 10px;
         color: white;
         text-decoration: none;
         text-transform: uppercase;
     }
-    .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .vinyl-gallery-img div:hover{
+    .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .vinyl-gallery-img div:hover, .all-gallery-img div:hover{
         opacity: 0.7;
         transition: all ease-in-out 100ms;
     }
@@ -142,7 +146,7 @@
 /*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
 @media screen and (max-width: 800px){
         /*Gallery Container*/
-        #index-gallery-t, #index-gallery-h, #index-gallery-v{
+        #index-gallery-t, #index-gallery-h, #index-gallery-v,  #index-gallery-all{
             position: relative;
             padding-top: 30%;
             padding-bottom: 20%;
@@ -162,10 +166,19 @@
                 "img17 img18"
                 "img19 img20"
                 "img21 img22"
+                "img23 img24"
+                "img25 img26"
+                "img27 img28"
+                "img29 img30"
+                "img31 img32"
+                "img33 img34"
+                "img35 img36"
+                "img37 img38"
+                "img39 img40"
                 ;
         }
     
-        #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-v .vinyl-gallery-img{
+        #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-v .vinyl-gallery-img , #index-gallery-all .all-gallery-img{
             width: 120px;
             height: 120px;
             background-repeat: no-repeat;
@@ -176,7 +189,7 @@
     
     
         /* Gallery image styling*/
-        .tile-gallery-img div , .hardwood-gallery-img div, .vinyl-gallery-img div{
+        .tile-gallery-img div , .hardwood-gallery-img div, .vinyl-gallery-img div, .all-gallery-img div{
             width: 100%;
             height: 100%;
             background-color: black;
@@ -185,13 +198,13 @@
             justify-content: center;
             align-items: center;
         }
-        .tile-gallery-img a , .hardwood-gallery-img a , .vinyl-gallery-img a{
+        .tile-gallery-img a , .hardwood-gallery-img a , .vinyl-gallery-img a, .all-gallery-img a{
             font-size: 10px;
             color: white;
             text-decoration: none;
             text-transform: uppercase;
         }
-        .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .vinyl-gallery-img div:hover{
+        .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .vinyl-gallery-img div:hover, .all-gallery-img div:hover{
             opacity: 0.7;
             transition: all ease-in-out 100ms;
         }
@@ -508,4 +521,201 @@
 #index-gallery-v .img8{
     grid-area: img8;
     background-image: url("imgs/img/thumbs/Vinyl/img8.jpg");
+}
+
+ /* --------------------------------------------------ALL Images--------------------------------------*/
+
+ #index-gallery-all .img1{
+    grid-area: img1;
+    background-image: url("imgs/img/thumbs/All/img1.jpg");
+}
+#index-gallery-all .img2{
+    grid-area: img2;
+    background-image: url("imgs/img/thumbs/All/img2.jpg");
+}
+#index-gallery-all .img3{
+    grid-area: img3;
+    background-image: url("imgs/img/thumbs/All/img3.jpg");
+}
+#index-gallery-all .img4{
+    grid-area: img4;
+    background-image: url("imgs/img/thumbs/All/img4.jpg");
+}
+#index-gallery-all .img5{
+    grid-area: img5;
+    background-image: url("imgs/img/thumbs/All/img5.jpg");
+}
+#index-gallery-all .img6{
+    grid-area: img6;
+    background-image: url("imgs/img/thumbs/All/img6.jpg");
+}
+#index-gallery-all .img7{
+    grid-area: img7;
+    background-image: url("imgs/img/thumbs/All/img7.jpg");
+}
+#index-gallery-all .img8{
+    grid-area: img8;
+    background-image: url("imgs/img/thumbs/All/img8.jpg");
+}
+#index-gallery-all .img9{
+    grid-area: img9;
+    background-image: url("imgs/img/thumbs/All/img9.jpg");
+}
+#index-gallery-all .img10{
+    grid-area: img10;
+    background-image: url("imgs/img/thumbs/All/img10.jpg");
+}
+#index-gallery-all .img11{
+    grid-area: img11;
+    background-image: url("imgs/img/thumbs/All/img11.jpg");
+}
+#index-gallery-all .img12{
+    grid-area: img12;
+    background-image: url("imgs/img/thumbs/All/img12.jpg");
+}
+#index-gallery-all .img13{
+    grid-area: img13;
+    background-image: url("imgs/img/thumbs/All/img13.jpg");
+}
+#index-gallery-all .img14{
+    grid-area: img14;
+    background-image: url("imgs/img/thumbs/All/img14.jpg");
+}
+#index-gallery-all .img15{
+    grid-area: img15;
+    background-image: url("imgs/img/thumbs/All/img15.jpg");
+}
+#index-gallery-all .img16{
+    grid-area: img16;
+    background-image: url("imgs/img/thumbs/All/img16.jpg");
+}
+#index-gallery-all .img17{
+    grid-area: img17;
+    background-image: url("imgs/img/thumbs/All/img17.jpg");
+}
+#index-gallery-all .img18{
+    grid-area: img18;
+    background-image: url("imgs/img/thumbs/All/img18.jpg");
+}
+#index-gallery-all .img19{
+    grid-area: img19;
+    background-image: url("imgs/img/thumbs/All/img19.jpg");
+}
+#index-gallery-all .img20{
+    grid-area: img20;
+    background-image: url("imgs/img/thumbs/All/img20.jpg");
+}
+#index-gallery-all .img21{
+    grid-area: img21;
+    background-image: url("imgs/img/thumbs/All/img21.jpg");
+}
+#index-gallery-all .img22{
+    grid-area: img22;
+    background-image: url("imgs/img/thumbs/All/img22.jpg");
+}
+#index-gallery-all .img23{
+    grid-area: img23;
+    background-image: url("imgs/img/thumbs/All/img23.jpg");
+}
+#index-gallery-all .img24{
+    grid-area: img24;
+    background-image: url("imgs/img/thumbs/All/img24.jpg");
+}
+#index-gallery-all .img25{
+    grid-area: img25;
+    background-image: url("imgs/img/thumbs/All/img25.jpg");
+}
+#index-gallery-all .img26{
+    grid-area: img26;
+    background-image: url("imgs/img/thumbs/All/img26.jpg");
+}
+#index-gallery-all .img27{
+    grid-area: img27;
+    background-image: url("imgs/img/thumbs/All/img27.jpg");
+}
+#index-gallery-all .img28{
+    grid-area: img28;
+    background-image: url("imgs/img/thumbs/All/img28.jpg");
+}
+#index-gallery-all .img29{
+    grid-area: img29;
+    background-image: url("imgs/img/thumbs/All/img29.jpg");
+}
+#index-gallery-all .img30{
+    grid-area: img30;
+    background-image: url("imgs/img/thumbs/All/img30.jpg");
+}
+#index-gallery-all .img31{
+    grid-area: img31;
+    background-image: url("imgs/img/thumbs/All/img31.jpg");
+}
+#index-gallery-all .img32{
+    grid-area: img32;
+    background-image: url("imgs/img/thumbs/All/img32.jpg");
+}
+#index-gallery-all .img33{
+    grid-area: img33;
+    background-image: url("imgs/img/thumbs/All/img33.jpg");
+}
+#index-gallery-all .img34{
+    grid-area: img34;
+    background-image: url("imgs/img/thumbs/All/img34.jpg");
+}
+#index-gallery-all .img35{
+    grid-area: img35;
+    background-image: url("imgs/img/thumbs/All/img35.jpg");
+}
+#index-gallery-all .img36{
+    grid-area: img36;
+    background-image: url("imgs/img/thumbs/All/img36.jpg");
+}
+#index-gallery-all .img37{
+    grid-area: img37;
+    background-image: url("imgs/img/thumbs/All/img37.jpg");
+}
+#index-gallery-all .img38{
+    grid-area: img38;
+    background-image: url("imgs/img/thumbs/All/img38.jpg");
+}
+
+#index-gallery-all .img39{
+    grid-area: img39;
+    background-image: url("imgs/img/thumbs/All/img39.jpg");
+}
+
+#index-gallery-all .img40{
+    grid-area: img40;
+    background-image: url("imgs/img/thumbs/All/img40.jpg");
+}
+#index-gallery-all .img41{
+    grid-area: img41;
+    background-image: url("imgs/img/thumbs/All/img41.jpg");
+}
+#index-gallery-all .img42{
+    grid-area: img42;
+    background-image: url("imgs/img/thumbs/All/img42.jpg");
+}
+#index-gallery-all .img43{
+    grid-area: img43;
+    background-image: url("imgs/img/thumbs/All/img43.jpg");
+}
+#index-gallery-all .img44{
+    grid-area: img44;
+    background-image: url("imgs/img/thumbs/All/img44.jpg");
+}
+#index-gallery-all .img45{
+    grid-area: img45;
+    background-image: url("imgs/img/thumbs/All/img45.jpg");
+}
+#index-gallery-all .img46{
+    grid-area: img46;
+    background-image: url("imgs/img/thumbs/All/img46.jpg");
+}
+#index-gallery-all .img47{
+    grid-area: img47;
+    background-image: url("imgs/img/thumbs/All/img47.jpg");
+}
+#index-gallery-all .img48{
+    grid-area: img48;
+    background-image: url("imgs/img/thumbs/All/img48.jpg");
 }

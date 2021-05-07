@@ -67,6 +67,12 @@
 
 
     <script>
+        window.addEventListener('load', function() {
+            showAll();
+        }, true);
+
+        var screenWidth = screen.width;
+
 		function showTiles(){
 			document.getElementById("index-gallery-t").style.display = "block";
             document.getElementById("index-gallery-t").style.display = "grid";
@@ -74,6 +80,15 @@
             document.getElementById("index-gallery-h").style.display = "none";
             document.getElementById("index-gallery-v").style.display = "none";
             document.getElementById("index-gallery-all").style.display = "none";
+
+            if(screenWidth >= 800){
+                document.getElementById("footer").style.top = "100%";
+                document.getElementById("footer").style.height = "16%";
+            }
+            else if(screenWidth <= 799){
+                document.getElementById("footer_phone").style.top = "90%";
+                document.getElementById("footer_phone").style.height = "28%";
+            }
 		}
 
 		function showHardwood(){
@@ -83,6 +98,15 @@
             document.getElementById("index-gallery-t").style.display = "none";
             document.getElementById("index-gallery-v").style.display = "none";
             document.getElementById("index-gallery-all").style.display = "none";    
+
+            if(screenWidth >= 800){
+                document.getElementById("footer").style.bottom = "0%";
+                document.getElementById("footer").style.height = "24%";
+            }
+            else if(screenWidth <= 799){
+                document.getElementById("footer_phone").style.top = "60%";
+                document.getElementById("footer_phone").style.height = "42%";
+            }
 		}
 
 		function showVinyl(){
@@ -92,6 +116,15 @@
             document.getElementById("index-gallery-h").style.display = "none";
             document.getElementById("index-gallery-t").style.display = "none";
             document.getElementById("index-gallery-all").style.display = "none";   
+
+            if(screenWidth >= 800){
+                document.getElementById("footer").style.top = "75%";
+                document.getElementById("footer").style.height = "26%";
+            }
+            else if(screenWidth <= 799){
+                document.getElementById("footer_phone").style.top = "60%";
+                document.getElementById("footer_phone").style.height = "42%";
+            }
 		}
 
 		function showAll(){
@@ -101,6 +134,15 @@
             document.getElementById("index-gallery-h").style.display = "none";
             document.getElementById("index-gallery-v").style.display = "none";
             document.getElementById("index-gallery-t").style.display = "none"; 
+
+            if(screenWidth >= 800){
+                document.getElementById("footer").style.top = "90%";
+                document.getElementById("footer").style.height = "12%";
+            }
+            else if(screenWidth <= 799){
+                document.getElementById("footer_phone").style.top = "90%";
+                document.getElementById("footer_phone").style.height = "19%";
+            }
 		}
 
 		
@@ -215,7 +257,7 @@
 	</section>
 
         <!--Hardwood Images-->
-        <section id="index-gallery-h" style="display: none; padding: 5%;" class="wrapper-gallery">
+        <section id="index-gallery-h" style="display: none;" class="wrapper-gallery">
             <div class="hardwood-gallery-img img1">
                 <div>
                     <a href="#">This is a Image</a>
@@ -261,7 +303,7 @@
         </section>
 
         <!-- Vinyl Images -->
-        <section id="index-gallery-v" style="display: none; padding: 5%;" class="wrapper-gallery">
+        <section id="index-gallery-v" style="display: none;" class="wrapper-gallery">
             <div class="vinyl-gallery-img img1">
                 <div>
                     <a href="#">This is a Image</a>
@@ -307,7 +349,7 @@
         </section>
     
     <!--All Images-->
-	<section id="index-gallery-all" style="display: none; padding: 5%;" class="wrapper-gallery">
+	<section id="index-gallery-all" style="display: none;" class="wrapper-gallery">
 		<div class="all-gallery-img img1">
 			<div>
 				<a href="#">This is a Image</a>
@@ -537,7 +579,7 @@
     </footer>
 
     <!--footer for home page on PHONE Version-->
-		<footer class="footer_phone">
+		<footer class="footer_phone" id="footer_phone">
 			<div class="phone-main-content">
 
 				<div class="center">

@@ -2,7 +2,7 @@
 @media screen and (min-width: 800px){
     /*Gallery Container*/
     #index-gallery-t, #index-gallery-h, #index-gallery-v , #index-gallery-all{
-        padding-top: 15%;
+        padding-top: 5%;
         padding-bottom: 5%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -144,11 +144,11 @@
 }
 
 /*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 799px){
         /*Gallery Container*/
         #index-gallery-t, #index-gallery-h, #index-gallery-v,  #index-gallery-all{
             position: relative;
-            padding-top: 30%;
+            padding-top: 20%;
             padding-bottom: 20%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -310,6 +310,8 @@
 /* Library Wrapper */
 .wrapper-gallery{
     margin:0 20vw;
+    margin-left: 16%;
+    margin-right: 14%;
 } 
 
 

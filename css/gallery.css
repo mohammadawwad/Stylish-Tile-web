@@ -1,8 +1,12 @@
 /* ----------------------------------------------------WEB VIEW-------------------------------- */
 @media screen and (min-width: 800px){
+    body{
+        background-color: white;
+    }
+
     /*Gallery Container*/
     #index-gallery-t, #index-gallery-h, #index-gallery-v , #index-gallery-all{
-        padding-top: 5%;
+        padding-top: 10%;
         padding-bottom: 5%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

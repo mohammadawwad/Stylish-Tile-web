@@ -15,8 +15,8 @@ body.Home {
     .grid-container {
         display: grid;
         grid-template-areas: 
-        'header header header header'
-        'grid-title-1 grid-title-2 grid-title-3 grid-title-4';
+        'header header header header header'
+        'grid-title-1 grid-title-2 grid-title-3 grid-title-4 grid-title-5';
         padding: 10px;
         margin-top: 150px;
         grid-gap: 10px;
@@ -26,7 +26,7 @@ body.Home {
         background-color: rgb(62, 139, 228);
         border: none;
         height: 100%;
-        width: 70%;
+        width: 225px;
         font-size: 20px;
         color: white;
         transition: 0.5s;
@@ -108,7 +108,8 @@ body.Home {
         display: grid;
         grid-template-areas: 
         'header header header header'
-        'grid-title-1 grid-title-2 grid-title-3 grid-title-4';
+        'grid-title-1 grid-title-2 grid-title-2 grid-title-3'
+        'grid-title-4 grid-title-4 grid-title-5 grid-title-5';
         padding: 10px;
         margin-top: 150px;
         grid-gap: 10px;
@@ -118,7 +119,7 @@ body.Home {
         background-color: rgb(62, 139, 228);
         border: none;
         height: 100%;
-        width: 100%;
+        width: 115px;
         font-size: 12px;
         color: white;
         transition: 0.5s;

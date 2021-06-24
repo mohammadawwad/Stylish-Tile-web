@@ -165,6 +165,8 @@ body.Home {
 	font-size: 20px;
 	box-shadow: none;
 	border: none;
+	color: white;
+	transition: 0.5s;
 }
 .contact-button:hover{
 	color: #111;

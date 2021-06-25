@@ -59,9 +59,9 @@
             <p style="color: rgb(3, 108, 245); display: inline;">Galleries</p>
         </div>
         <!--  SUb Titles -->
-        <div class="grid-title" style="grid-area: grid-title-1;"><button onclick="showTiles();" class="tile-btn-galleries">Tiles</button></div>
-        <div class="grid-title" style="grid-area: grid-title-2;"><button onclick="showVinyl();" class="vinyl-btn-galleries">Vinyl</button></div>
-        <div class="grid-title" style="grid-area: grid-title-3;"><button onclick="showHardwood();" class="hardwood-btn-galleries">Hardwood</button></div>  
+        <div class="grid-title" style="grid-area: grid-title-1;"><button onclick="showTiles();" class="tile-btn-galleries">Tiles & Stone</button></div>
+        <div class="grid-title" style="grid-area: grid-title-2;"><button onclick="showWoodfloor();" class="woodfloor-btn-galleries">Wood Floors</button></div>
+        <!-- <div class="grid-title" style="grid-area: grid-title-3;"><button onclick="showHardwood();" class="hardwood-btn-galleries">Hardwood</button></div>   -->
         <div class="grid-title" style="grid-area: grid-title-4;"><button onclick="showAll();" class="all-btn-galleries">All</button></div>  
     </div>
 
@@ -77,53 +77,53 @@
 			document.getElementById("index-gallery-t").style.display = "block";
             document.getElementById("index-gallery-t").style.display = "grid";
 
-            document.getElementById("index-gallery-h").style.display = "none";
-            document.getElementById("index-gallery-v").style.display = "none";
+            // document.getElementById("index-gallery-h").style.display = "none";
+            document.getElementById("index-gallery-w").style.display = "none";
             document.getElementById("index-gallery-all").style.display = "none";
 
             if(screenWidth >= 800){
                 document.getElementById("footer").style.top = "100%";
-                document.getElementById("footer").style.height = "16%";
+                document.getElementById("footer").style.height = "25%";
             }
             else if(screenWidth <= 799){
-                document.getElementById("footer_phone").style.top = "90%";
+                document.getElementById("footer_phone").style.top = "100%";
                 document.getElementById("footer_phone").style.height = "28%";
             }
 		}
 
-		function showHardwood(){
-			document.getElementById("index-gallery-h").style.display = "block";
-            document.getElementById("index-gallery-h").style.display = "grid";
+		// function showHardwood(){
+		// 	// document.getElementById("index-gallery-h").style.display = "block";
+        //     // document.getElementById("index-gallery-h").style.display = "grid";
 
-            document.getElementById("index-gallery-t").style.display = "none";
-            document.getElementById("index-gallery-v").style.display = "none";
-            document.getElementById("index-gallery-all").style.display = "none";    
+        //     document.getElementById("index-gallery-t").style.display = "none";
+        //     document.getElementById("index-gallery-w").style.display = "none";
+        //     document.getElementById("index-gallery-all").style.display = "none";    
 
-            if(screenWidth >= 800){
-                document.getElementById("footer").style.bottom = "0%";
-                document.getElementById("footer").style.height = "24%";
-            }
-            else if(screenWidth <= 799){
-                document.getElementById("footer_phone").style.top = "60%";
-                document.getElementById("footer_phone").style.height = "42%";
-            }
-		}
+        //     if(screenWidth >= 800){
+        //         document.getElementById("footer").style.bottom = "0%";
+        //         document.getElementById("footer").style.height = "24%";
+        //     }
+        //     else if(screenWidth <= 799){
+        //         document.getElementById("footer_phone").style.top = "60%";
+        //         document.getElementById("footer_phone").style.height = "42%";
+        //     }
+		// }
 
-		function showVinyl(){
-			document.getElementById("index-gallery-v").style.display = "block";
-            document.getElementById("index-gallery-v").style.display = "grid";
+		function showWoodfloor(){
+			document.getElementById("index-gallery-w").style.display = "block";
+            document.getElementById("index-gallery-w").style.display = "grid";
 
-            document.getElementById("index-gallery-h").style.display = "none";
+            // document.getElementById("index-gallery-h").style.display = "none";
             document.getElementById("index-gallery-t").style.display = "none";
             document.getElementById("index-gallery-all").style.display = "none";   
 
             if(screenWidth >= 800){
-                document.getElementById("footer").style.top = "75%";
-                document.getElementById("footer").style.height = "26%";
+                document.getElementById("footer").style.top = "100%";
+                document.getElementById("footer").style.height = "12%";
             }
             else if(screenWidth <= 799){
                 document.getElementById("footer_phone").style.top = "60%";
-                document.getElementById("footer_phone").style.height = "42%";
+                document.getElementById("footer_phone").style.height = "15%";
             }
 		}
 
@@ -131,17 +131,17 @@
 			document.getElementById("index-gallery-all").style.display = "block";
             document.getElementById("index-gallery-all").style.display = "grid";
 
-            document.getElementById("index-gallery-h").style.display = "none";
-            document.getElementById("index-gallery-v").style.display = "none";
+            // document.getElementById("index-gallery-h").style.display = "none";
+            document.getElementById("index-gallery-w").style.display = "none";
             document.getElementById("index-gallery-t").style.display = "none"; 
 
             if(screenWidth >= 800){
                 document.getElementById("footer").style.top = "90%";
-                document.getElementById("footer").style.height = "12%";
+                document.getElementById("footer").style.height = "13%";
             }
-            else if(screenWidth <= 799){
+            if(screenWidth <= 799){
                 document.getElementById("footer_phone").style.top = "90%";
-                document.getElementById("footer_phone").style.height = "19%";
+                document.getElementById("footer_phone").style.height = "18%";
             }
 		}
 
@@ -257,7 +257,7 @@
 	</section>
 
         <!--Hardwood Images-->
-        <section id="index-gallery-h" style="display: none;" class="wrapper-gallery">
+        <!-- <section id="index-gallery-h" style="display: none;" class="wrapper-gallery">
             <div class="hardwood-gallery-img img1">
                 <div>
                     <a href="#">This is a Image</a>
@@ -298,52 +298,152 @@
                     <a href="#">This is a Image</a>
                 </div>
             </div>
-            <!--Linking our gallery javascript file-->
+            Linking our gallery javascript file
             <script src="css/js/gallery.js"></script>
-        </section>
+        </section> -->
 
-        <!-- Vinyl Images -->
-        <section id="index-gallery-v" style="display: none;" class="wrapper-gallery">
-            <div class="vinyl-gallery-img img1">
+        <!--  Images -->
+        <section id="index-gallery-w" style="display: none;" class="wrapper-gallery">
+            <div class="woodfloor-gallery-img img1">
                 <div>
                     <a href="#">This is a Image</a>
                 </div>
             </div>
-            <div class="vinyl-gallery-img img2">
+            <div class="woodfloor-gallery-img img2">
                 <div>
                     <a href="#">This is a Image</a>
                 </div>
             </div>
-            <div class="vinyl-gallery-img img3">
+            <div class="woodfloor-gallery-img img3">
                 <div>
                     <a href="#">This is a Image</a>
                 </div>
             </div>
-            <div class="vinyl-gallery-img img4">
+            <div class="woodfloor-gallery-img img4">
                 <div>
                     <a href="#">This is a Image</a>
                 </div>
             </div>
-            <div class="vinyl-gallery-img img5">
+            <div class="woodfloor-gallery-img img5">
                 <div>
                     <a href="#">This is a Image</a>
                 </div>
             </div>
-            <div class="vinyl-gallery-img img6">
+            <div class="woodfloor-gallery-img img6">
                 <div>
                     <a href="#">This is a Image</a>
                 </div>
             </div>
-            <div class="vinyl-gallery-img img7">
+            <div class="woodfloor-gallery-img img7">
                 <div>
                     <a href="#">This is a Image</a>
                 </div>
             </div>
-            <div class="vinyl-gallery-img img8">
+            <div class="woodfloor-gallery-img img8">
                 <div>
                     <a href="#">This is a Image</a>
                 </div>
             </div>
+            <div class="woodfloor-gallery-img img9">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img10">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img11">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img12">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img13">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img14">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img15">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img16">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img17">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img18">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img19">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img20">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img21">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img22">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img23">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img24">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img25">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img26">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img27">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div>
+            <div class="woodfloor-gallery-img img28">
+                <div>
+                    <a href="#">This is a Image</a>
+                </div>
+            </div> 
             <!--Linking our gallery javascript file-->
             <script src="css/js/gallery.js"></script>
         </section>
@@ -544,7 +644,7 @@
                 <h3>Office Hours</h3>
                 <h4>
                     Monday-Friday: 9am to 6pm <br />Weekends-Holidays: 11am to 4pm<br />
-                    <a href="mailto:noor@stylishtile.ca"> noor@stylishtile.ca </a><br>
+                    <a href="mailto:info@stylishtile.ca"> info@stylishtile.ca </a><br>
                     <a href="https://www.google.ca/maps/place/Stylish+Tile/@49.2148857,-122.8247376,13z/data=!4m9!1m3!2m2!1stile+store!6e6!3m4!1s0x5485d7188ffcbf39:0x1f09f159e4dad9ef!8m2!3d49.2260839!4d-122.8337136" target="_blank"> Address<br /> </a>
                     <a href="careers.html"> Careers </a>
                 </h4>
@@ -595,7 +695,7 @@
 					<h3>Office Hours</h3>
 					<h4>
 						Monday-Friday: 8am to 6pm <br />Weekends-Holidays: 11am to 4pm<br />
-                        <a href="mailto:noor@stylishtile.ca"> noor@stylishtile.ca </a><br>
+                        <a href="mailto:info@stylishtile.ca"> info@stylishtile.ca </a><br>
 						<a href="https://www.google.ca/maps/place/1+Fawcett+Rd,+Coquitlam,+BC+V3K+6X9/@49.223361,-122.8336511,21z/data=!4m5!3m4!1s0x5485d7c4551aa21f:0xe3249fb2744dfb76!8m2!3d49.2234063!4d-122.8335626" target="_blank"> Address <br /></a>
 						<a href="careers.html"> Careers </a>
 					</h4>

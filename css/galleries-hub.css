@@ -12,14 +12,14 @@ body.Home {
     .grid-container {
         display: grid;
         grid-template-areas: 
-        'header header header header'
-        'grid-title-1 grid-title-2 grid-title-3 grid-title-4';
+        'header header header'
+        'grid-title-1 grid-title-2 grid-title-4';
         padding: 10px;
         margin-top: 150px;
         grid-gap: 10px;
     }
 
-    .tile-btn-galleries, .hardwood-btn-galleries, .vinyl-btn-galleries, .all-btn-galleries{
+    .tile-btn-galleries, .hardwood-btn-galleries, .woodfloor-btn-galleries, .all-btn-galleries{
         background-color: rgb(62, 139, 228);
         border: none;
         height: 100%;
@@ -28,7 +28,7 @@ body.Home {
         color: white;
         transition: 0.5s;
     }
-    .tile-btn-galleries:hover, .hardwood-btn-galleries:hover, .vinyl-btn-galleries:hover, .all-btn-galleries:hover{
+    .tile-btn-galleries:hover, .hardwood-btn-galleries:hover, .woodfloor-btn-galleries:hover, .all-btn-galleries:hover{
         color: #111;
         transition: 0.5s;
         background-color: transparent;
@@ -80,14 +80,14 @@ body.Home {
 .grid-container {
 	display: grid;
 	grid-template-areas: 
-	'header header header header'
-    'grid-title-1 grid-title-2 grid-title-3 grid-title-4';
+	'header header header'
+    'grid-title-1 grid-title-2 grid-title-4';
 	padding: 10px;
 	margin-top: 150px;
 	grid-gap: 10px;
 }
 
-.tile-btn-galleries, .hardwood-btn-galleries, .vinyl-btn-galleries, .all-btn-galleries{
+.tile-btn-galleries, .hardwood-btn-galleries, .woodfloor-btn-galleries, .all-btn-galleries{
     background-color: rgb(62, 139, 228);
     border: none;
     height: 100%;
@@ -96,7 +96,7 @@ body.Home {
     color: white;
     transition: 0.5s;
 }
-.tile-btn-galleries:hover, .hardwood-btn-galleries:hover, .vinyl-btn-galleries:hover, .all-btn-galleries:hover{
+.tile-btn-galleries:hover, .hardwood-btn-galleries:hover, .woodfloor-btn-galleries:hover, .all-btn-galleries:hover{
     color: #111;
     transition: 0.5s;
     background-color: transparent;

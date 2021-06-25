@@ -5,12 +5,12 @@
 
 var tileImages = document.querySelectorAll(".tile-gallery-img");
 var hardwoodImages = document.querySelectorAll(".hardwood-gallery-img");
-var vinylImages = document.querySelectorAll(".vinyl-gallery-img");
+var woodfloorImages = document.querySelectorAll(".woodfloor-gallery-img");
 var allImages = document.querySelectorAll(".all-gallery-img");
 var getLatestOpenedImg;
 var windowWidth = window.innerWidth;
 
-if (tileImages || hardwoodImages || vinylImages || allImages) {
+if (tileImages || hardwoodImages || woodfloorImages || allImages) {
 
     //Tiles
     tileImages.forEach(
@@ -58,7 +58,7 @@ if (tileImages || hardwoodImages || vinylImages || allImages) {
                 container.appendChild(newNextBtn);
                 newNextBtn.setAttribute("class", "img-btn-next");
                 newNextBtn.setAttribute("onclick", "changeImg(1, tileImages)");
-                newNextBtn.style.cssText = "right: 10px;";
+                newNextBtn.style.cssText = (windowWidth > 799) ? "right: 100px;" : "right: 10px";
 
                 //creating the prev button
                 let newPrevBtn = document.createElement("a");
@@ -67,7 +67,7 @@ if (tileImages || hardwoodImages || vinylImages || allImages) {
                 container.appendChild(newPrevBtn);
                 newPrevBtn.setAttribute("class", "img-btn-prev");
                 newPrevBtn.setAttribute("onclick", "changeImg(0, tileImages)");
-                newPrevBtn.style.cssText = "left: 10px;";
+                newPrevBtn.style.cssText = (windowWidth > 799) ? "left: 100px;" : "left: 10px";
             }
         }
     });
@@ -118,7 +118,7 @@ if (tileImages || hardwoodImages || vinylImages || allImages) {
                 container.appendChild(newNextBtn);
                 newNextBtn.setAttribute("class", "img-btn-next");
                 newNextBtn.setAttribute("onclick", "changeImg(1, hardwoodImages)");
-                newNextBtn.style.cssText = "right: 10px;";
+                newNextBtn.style.cssText = (windowWidth > 799) ? "right: 100px;" : "right: 10px";
 
                 //creating the prev button
                 let newPrevBtn = document.createElement("a");
@@ -127,21 +127,21 @@ if (tileImages || hardwoodImages || vinylImages || allImages) {
                 container.appendChild(newPrevBtn);
                 newPrevBtn.setAttribute("class", "img-btn-prev");
                 newPrevBtn.setAttribute("onclick", "changeImg(0, hardwoodImages)");
-                newPrevBtn.style.cssText = "left: 10px;";
+                newPrevBtn.style.cssText = (windowWidth > 799) ? "left: 100px;" : "left: 10px";
             }
         }
     });
 
 
-    //Vinyl
-    vinylImages.forEach(
+    //Woodfloor
+    woodfloorImages.forEach(
         function (image, index) {
         image.onclick = function () {
 
             //cuts the url to the neccery files
             let getElementCss = window.getComputedStyle(image);
             let getFullImgUrl = getElementCss.getPropertyValue("background-image");
-            let getImgUrlPos = getFullImgUrl.split("css/imgs/img/thumbs/Vinyl/");
+            let getImgUrlPos = getFullImgUrl.split("css/imgs/img/thumbs/Woodfloor/");
             
             let setNewImgUrl = getImgUrlPos[1].replace('")', '');
             getLatestOpenedImg = index + 1;
@@ -155,17 +155,17 @@ if (tileImages || hardwoodImages || vinylImages || allImages) {
             newImgWindow.setAttribute("onclick", "closeImg()");
 
             //creates and id for the new img and sets the new url
-            let newImg = document.createElement("img");
+            let newImg = document.createElement("img")
             newImgWindow.appendChild(newImg);
-            newImg.setAttribute("src", "css/imgs/img/full/Vinyl/" + setNewImgUrl);
+            newImg.setAttribute("src", "css/imgs/img/full/Woodfloor/" + setNewImgUrl);
             newImg.setAttribute("id", "current-img");
 
             document.addEventListener('keydown', function(event) {
                 if(event.key == "ArrowLeft") {
-                    changeImg(0, vinylImages);
+                    changeImg(0, woodfloorImages);
                 }
                 else if(event.key == "ArrowRight") {
-                    changeImg(1, vinylImages);
+                    changeImg(1, woodfloorImages);
                 }
             });
 
@@ -176,8 +176,8 @@ if (tileImages || hardwoodImages || vinylImages || allImages) {
                 newNextBtn.appendChild(btnNextText);
                 container.appendChild(newNextBtn);
                 newNextBtn.setAttribute("class", "img-btn-next");
-                newNextBtn.setAttribute("onclick", "changeImg(1, vinylImages)");
-                newNextBtn.style.cssText = "right: 10px;";
+                newNextBtn.setAttribute("onclick", "changeImg(1, woodfloorImages)");
+                newNextBtn.style.cssText = (windowWidth > 799) ? "right: 100px;" : "right: 10px";
 
                 //creating the prev button
                 let newPrevBtn = document.createElement("a");
@@ -185,8 +185,8 @@ if (tileImages || hardwoodImages || vinylImages || allImages) {
                 newPrevBtn.appendChild(btnPrevText);
                 container.appendChild(newPrevBtn);
                 newPrevBtn.setAttribute("class", "img-btn-prev");
-                newPrevBtn.setAttribute("onclick", "changeImg(0, vinylImages)");
-                newPrevBtn.style.cssText = "left: 10px;";
+                newPrevBtn.setAttribute("onclick", "changeImg(0, woodfloorImages)");
+                newPrevBtn.style.cssText = (windowWidth > 799) ? "left: 100px;" : "left: 10px";
             }
         }
     });
@@ -220,10 +220,10 @@ if (tileImages || hardwoodImages || vinylImages || allImages) {
 
             document.addEventListener('keydown', function(event) {
                 if(event.key == "ArrowLeft") {
-                    changeImg(0, vinylImages);
+                    changeImg(0, woodfloorImages);
                 }
                 else if(event.key == "ArrowRight") {
-                    changeImg(1, vinylImages);
+                    changeImg(1, woodfloorImages);
                 }
             });
 
@@ -235,7 +235,7 @@ if (tileImages || hardwoodImages || vinylImages || allImages) {
                 container.appendChild(newNextBtn);
                 newNextBtn.setAttribute("class", "img-btn-next");
                 newNextBtn.setAttribute("onclick", "changeImg(1, allImages)");
-                newNextBtn.style.cssText = "right: 10px;";
+                newNextBtn.style.cssText = (windowWidth > 799) ? "right: 100px;" : "right: 10px";
 
                 //creating the prev button
                 let newPrevBtn = document.createElement("a");
@@ -244,7 +244,7 @@ if (tileImages || hardwoodImages || vinylImages || allImages) {
                 container.appendChild(newPrevBtn);
                 newPrevBtn.setAttribute("class", "img-btn-prev");
                 newPrevBtn.setAttribute("onclick", "changeImg(0, allImages)");
-                newPrevBtn.style.cssText = "left: 10px;";
+                newPrevBtn.style.cssText = (windowWidth > 799) ? "left: 100px;" : "left: 10px";
             }
         }
     });
@@ -289,8 +289,8 @@ function changeImg(change, imageArray) {
     if(imageArray == hardwoodImages){
         newImg.setAttribute("src", "css/imgs/img/full/Hardwood/img" + calcNewImg + ".jpg");
     }
-    if(imageArray == vinylImages){
-        newImg.setAttribute("src", "css/imgs/img/full/Vinyl/img" + calcNewImg + ".jpg");
+    if(imageArray == woodfloorImages){
+        newImg.setAttribute("src", "css/imgs/img/full/Woodfloor/img" + calcNewImg + ".jpg");
     }
     if(imageArray == allImages){
         newImg.setAttribute("src", "css/imgs/img/full/All/img" + calcNewImg + ".jpg");
@@ -303,12 +303,12 @@ function changeImg(change, imageArray) {
 
         //sets the next button
         let nextBtn = document.querySelector(".img-btn-next");
-        nextBtn.style.cssText = "right: 10px;";
+        nextBtn.style.cssText = (windowWidth > 799) ? "right: 100px;" : "right: 10px";
         nextBtn.setAttribute("class", "img-btn-next");
 
         //sets the prev button
         let prevBtn = document.querySelector(".img-btn-prev");
-        prevBtn.style.cssText = "left: 10px;";
+        prevBtn.style.cssText = (windowWidth > 799) ? "left: 100px;" : "left: 10px";
         prevBtn.setAttribute("class", "img-btn-prev");
     }
 }

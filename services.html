@@ -53,10 +53,10 @@
 			<p style="color: rgb(3, 108, 245); display: inline;">Services</p>
 		</div>
 		<!--  SUb Titles -->
-		<div class="grid-title" style="grid-area: grid-title-1;"><button onclick="tiles();" class="tile-btn-services">Tiles</button></div>
-		<div class="grid-title" style="grid-area: grid-title-2;"><button onclick="hardwood();" class="hardwood-btn-services">Hardwood</button></div>
+		<div class="grid-title" style="grid-area: grid-title-1;"><button onclick="tiles();" class="tile-btn-services">Tiles & Stone Installation</button></div>
+		<div class="grid-title" style="grid-area: grid-title-2;"><button onclick="woodfloor();" class="woodfloor-btn-services">Wood Floor Installation</button></div>
 		<div class="grid-title" style="grid-area: grid-title-3;"><button onclick="renovation();" class="renovation-btn-services">Renovation</button></div>  
-		<div class="grid-title" style="grid-area: grid-title-4;"><button onclick="demolition();" class="demolition-btn-services">Demolition</button></div>  
+		<div class="grid-title" style="grid-area: grid-title-4;"><button onclick="restoration();" class="restoration-btn-services">Restoration</button></div>  
 		<div class="grid-title" style="grid-area: grid-title-5;"><button onclick="remodeling();" class="remodeling-btn-services">Remodeling</button></div>  
 	</div>
 
@@ -80,13 +80,13 @@
 		</div>
 	</div>
 
-	<div id="services-container-hardwood">
+	<div id="services-container-woodfloor">
 		<div class="info-1">
-			<img id="img-1" src="css/imgs/services/hardwood/hardwood-1.jpg" />
+			<img id="img-1" src="css/imgs/services/woodfloor/hardwood-1.jpg" />
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
 		</div>
 		<div class="info-2">
-			<img id="img-2" src="css/imgs/services/hardwood/hardwood-3.jpg" />
+			<img id="img-2" src="css/imgs/services/woodfloor/hardwood-3.jpg" />
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
 		</div>
 	</div>
@@ -102,25 +102,25 @@
 		</div>
 	</div>
 
-	<div id="services-container-demolition">
+	<div id="services-container-restoration">
 		<div class="tiles-info-1">
-			<img id="img-1" src="css/imgs/services/demolition/demolition-1.jpg" />
+			<img id="img-1" src="css/imgs/services/restoration/demolition-1.jpg" />
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
 		</div>
 		<div class="tiles-info-2">
-			<img id="img-2" src="css/imgs/services/demolition/demolition-2.jpg" />
+			<img id="img-2" src="css/imgs/services/restoration/demolition-2.jpg" />
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
 		</div>
 	</div>
 
 	<div id="services-container-remodeling">
 		<div class="tiles-info-1">
-			<img id="img-1" src="css/imgs/services/bath-kitchen remodeling/remodeling-1.jpg" />
-			<img id="img-1" src="css/imgs/services/bath-kitchen remodeling/remodeling-3.jpg" />
+			<img id="img-1" src="css/imgs/services/remodeling/remodeling-1.jpg" />
+			<img id="img-1" src="css/imgs/services/remodeling/remodeling-3.jpg" />
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
 		</div>
 		<div class="tiles-info-2">
-			<img id="img-2" src="css/imgs/services/bath-kitchen remodeling/remodeling-6.jpg"/>
+			<img id="img-2" src="css/imgs/services/remodeling/remodeling-6.jpg"/>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb</p>
 	</div>
 	
@@ -128,9 +128,9 @@
 	<script>
 		function clear(){
 			document.getElementById("services-container-tiles").style.display = "none";
-			document.getElementById("services-container-hardwood").style.display = "none";
+			document.getElementById("services-container-woodfloor").style.display = "none";
 			document.getElementById("services-container-renovation").style.display = "none";
-			document.getElementById("services-container-demolition").style.display = "none";
+			document.getElementById("services-container-restoration").style.display = "none";
 			document.getElementById("services-container-remodeling").style.display = "none";
 		}
 
@@ -140,10 +140,10 @@
 			document.getElementById("services-container-tiles").style.display = "grid";
 		}
 
-		function hardwood(){
+		function woodfloor(){
 			clear();
-			document.getElementById("services-container-hardwood").style.display = "block";
-			document.getElementById("services-container-hardwood").style.display = "grid";
+			document.getElementById("services-container-woodfloor").style.display = "block";
+			document.getElementById("services-container-woodfloor").style.display = "grid";
 		}
 
 		function renovation(){
@@ -152,10 +152,10 @@
 			document.getElementById("services-container-renovation").style.display = "grid";
 		}
 
-		function demolition(){
+		function restoration(){
 			clear();
-			document.getElementById("services-container-demolition").style.display = "block";
-			document.getElementById("services-container-demolition").style.display = "grid";
+			document.getElementById("services-container-restoration").style.display = "block";
+			document.getElementById("services-container-restoration").style.display = "grid";
 		}
 
 		function remodeling(){

@@ -5,7 +5,7 @@
     }
 
     /*Gallery Container*/
-    #index-gallery-t, #index-gallery-h, #index-gallery-v , #index-gallery-all{
+    #index-gallery-t, #index-gallery-h, #index-gallery-w , #index-gallery-all{
         padding-top: 10%;
         padding-bottom: 5%;
         display: grid;
@@ -26,7 +26,7 @@
             ;
     }
 
-    #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-v .vinyl-gallery-img, #index-gallery-all .all-gallery-img{
+    #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-w .woodfloor-gallery-img, #index-gallery-all .all-gallery-img{
         width: 200px;
         height: 200px;
         background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 
 
     /* Gallery image styling*/
-    .tile-gallery-img div , .hardwood-gallery-img div, .vinyl-gallery-img div , .all-gallery-img div{
+    .tile-gallery-img div , .hardwood-gallery-img div, .woodfloor-gallery-img div , .all-gallery-img div{
         width: 100%;
         height: 100%;
         background-color: black;
@@ -46,13 +46,13 @@
         justify-content: center;
         align-items: center;
     }
-    .tile-gallery-img a , .hardwood-gallery-img a , .vinyl-gallery-img a, .all-gallery-img a{
+    .tile-gallery-img a , .hardwood-gallery-img a , .woodfloor-gallery-img a, .all-gallery-img a{
         font-size: 10px;
         color: white;
         text-decoration: none;
         text-transform: uppercase;
     }
-    .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .vinyl-gallery-img div:hover, .all-gallery-img div:hover{
+    .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .woodfloor-gallery-img div:hover, .all-gallery-img div:hover{
         opacity: 0.7;
         transition: all ease-in-out 100ms;
     }
@@ -96,7 +96,7 @@
     /* Button Next */
     .img-btn-next{
         display: block;
-        padding: 15px 20px;
+        padding: 0px 20px;
         border-radius: 50%;
         background-color: white;
         position: fixed;
@@ -122,7 +122,7 @@
     /* Button Prev */
     .img-btn-prev {
         display: block;
-        padding: 15px 20px;
+        padding: 0px 20px;
         border-radius: 50%;
         background-color: white;
         position: fixed;
@@ -150,7 +150,7 @@
 /*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
 @media screen and (max-width: 799px){
         /*Gallery Container*/
-        #index-gallery-t, #index-gallery-h, #index-gallery-v,  #index-gallery-all{
+        #index-gallery-t, #index-gallery-h, #index-gallery-w,  #index-gallery-all{
             position: relative;
             padding-top: 20%;
             padding-bottom: 20%;
@@ -182,7 +182,7 @@
                 ;
         }
     
-        #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-v .vinyl-gallery-img , #index-gallery-all .all-gallery-img{
+        #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-w .woodfloor-gallery-img , #index-gallery-all .all-gallery-img{
             width: 120px;
             height: 120px;
             background-repeat: no-repeat;
@@ -193,7 +193,7 @@
     
     
         /* Gallery image styling*/
-        .tile-gallery-img div , .hardwood-gallery-img div, .vinyl-gallery-img div, .all-gallery-img div{
+        .tile-gallery-img div , .hardwood-gallery-img div, .woodfloor-gallery-img div, .all-gallery-img div{
             width: 100%;
             height: 100%;
             background-color: black;
@@ -202,13 +202,13 @@
             justify-content: center;
             align-items: center;
         }
-        .tile-gallery-img a , .hardwood-gallery-img a , .vinyl-gallery-img a, .all-gallery-img a{
+        .tile-gallery-img a , .hardwood-gallery-img a , .woodfloor-gallery-img a, .all-gallery-img a{
             font-size: 10px;
             color: white;
             text-decoration: none;
             text-transform: uppercase;
         }
-        .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .vinyl-gallery-img div:hover, .all-gallery-img div:hover{
+        .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .woodfloor-gallery-img div:hover, .all-gallery-img div:hover{
             opacity: 0.7;
             transition: all ease-in-out 100ms;
         }
@@ -255,7 +255,7 @@
         .img-btn-next{
             display: block;
             margin-right: 15px;
-            padding: 10px 15px;
+            padding: 0px 15px;
             border-radius: 50%;
             background-color: white;
             position: fixed;
@@ -283,7 +283,7 @@
         .img-btn-prev {
             display: block;
             margin-left: 15px;
-            padding: 10px 15px;
+            padding: 0px 15px;
             border-radius: 50%;
             background-color: white;
             position: fixed;
@@ -406,7 +406,7 @@
 }
 /* ---------------------------------Hardwood Images --------------------------*/
 
-#index-gallery-h .img1{
+/* #index-gallery-h .img1{
     grid-area: img1;
     background-image: url("imgs/img/thumbs/Hardwood/img1.jpg");
 }
@@ -487,47 +487,132 @@
 #index-gallery-h .img20{
     grid-area: img20;
     background-image: url("imgs/img/thumbs/Hardwood/img20.jpg");
-}
+} */
 
 
-/* ---------------------------------Vinyl Images --------------------------*/
+/* ---------------------------------Wood Floor Images --------------------------*/
 
-#index-gallery-v .img1{
+#index-gallery-w .img1{
     grid-area: img1;
-    background-image: url("imgs/img/thumbs/Vinyl/img1.jpg");
+    background-image: url("imgs/img/thumbs/Woodfloor/img1.jpg");
 }
-#index-gallery-v .img2{
+#index-gallery-w .img2{
     grid-area: img2;
-    background-image: url("imgs/img/thumbs/Vinyl/img2.jpg");
+    background-image: url("imgs/img/thumbs/Woodfloor/img2.jpg");
 }
-#index-gallery-v .img2{
+#index-gallery-w .img2{
     grid-area: img2;
-    background-image: url("imgs/img/thumbs/Vinyl/img2.jpg");
+    background-image: url("imgs/img/thumbs/Woodfloor/img2.jpg");
 }
-#index-gallery-v .img3{
+#index-gallery-w .img3{
     grid-area: img3;
-    background-image: url("imgs/img/thumbs/Vinyl/img3.jpg");
+    background-image: url("imgs/img/thumbs/Woodfloor/img3.jpg");
 }
-#index-gallery-v .img4{
+#index-gallery-w .img4{
     grid-area: img4;
-    background-image: url("imgs/img/thumbs/Vinyl/img4.jpg");
+    background-image: url("imgs/img/thumbs/Woodfloor/img4.jpg");
 }
-#index-gallery-v .img5{
+#index-gallery-w .img5{
     grid-area: img5;
-    background-image: url("imgs/img/thumbs/Vinyl/img5.jpg");
+    background-image: url("imgs/img/thumbs/Woodfloor/img5.jpg");
 }
-#index-gallery-v .img6{
+#index-gallery-w .img6{
     grid-area: img6;
-    background-image: url("imgs/img/thumbs/Vinyl/img6.jpg");
+    background-image: url("imgs/img/thumbs/Woodfloor/img6.jpg");
 }
-#index-gallery-v .img7{
+#index-gallery-w .img7{
     grid-area: img7;
-    background-image: url("imgs/img/thumbs/Vinyl/img7.jpg");
+    background-image: url("imgs/img/thumbs/Woodfloor/img7.jpg");
 }
-#index-gallery-v .img8{
+#index-gallery-w .img8{
     grid-area: img8;
-    background-image: url("imgs/img/thumbs/Vinyl/img8.jpg");
+    background-image: url("imgs/img/thumbs/Woodfloor/img8.jpg");
 }
+#index-gallery-w .img9{
+    grid-area: img9;
+    background-image: url("imgs/img/thumbs/Woodfloor/img9.jpg");
+}
+*#index-gallery-w .img10{
+    grid-area: img10;
+    background-image: url("imgs/img/thumbs/Woodfloor/img10.jpg");
+} 
+#index-gallery-w .img11{
+    grid-area: img11;
+    background-image: url("imgs/img/thumbs/Woodfloor/img11.jpg");
+}
+#index-gallery-w .img12{
+    grid-area: img12;
+    background-image: url("imgs/img/thumbs/Woodfloor/img12.jpg");
+}
+#index-gallery-w .img13{
+    grid-area: img13;
+    background-image: url("imgs/img/thumbs/Woodfloor/img13.jpg");
+}
+#index-gallery-w .img14{
+    grid-area: img14;
+    background-image: url("imgs/img/thumbs/Woodfloor/img14.jpg");
+}
+#index-gallery-w .img15{
+    grid-area: img15;
+    background-image: url("imgs/img/thumbs/Woodfloor/img15.jpg");
+}
+#index-gallery-w .img16{
+    grid-area: img16;
+    background-image: url("imgs/img/thumbs/Woodfloor/img16.jpg");
+}
+#index-gallery-w .img17{
+    grid-area: img17;
+    background-image: url("imgs/img/thumbs/Woodfloor/img17.jpg");
+}
+#index-gallery-w .img18{
+    grid-area: img18;
+    background-image: url("imgs/img/thumbs/Woodfloor/img18.jpg");
+}
+#index-gallery-w .img19{
+    grid-area: img19;
+    background-image: url("imgs/img/thumbs/Woodfloor/img19.jpg");
+}
+#index-gallery-w .img20{
+    grid-area: img20;
+    background-image: url("imgs/img/thumbs/Woodfloor/img20.jpg");
+}
+#index-gallery-w .img21{
+    grid-area: img21;
+    background-image: url("imgs/img/thumbs/Woodfloor/img21.jpg");
+}
+#index-gallery-w .img22{
+    grid-area: img22;
+    background-image: url("imgs/img/thumbs/Woodfloor/img22.jpg");
+}
+#index-gallery-w .img23{
+    grid-area: img23;
+    background-image: url("imgs/img/thumbs/Woodfloor/img23.jpg");
+}
+#index-gallery-w .img24{
+    grid-area: img24;
+    background-image: url("imgs/img/thumbs/Woodfloor/img24.jpg");
+}
+#index-gallery-w .img25{
+    grid-area: img25;
+    background-image: url("imgs/img/thumbs/Woodfloor/img25.jpg");
+}
+#index-gallery-w .img26{
+    grid-area: img26;
+    background-image: url("imgs/img/thumbs/Woodfloor/img26.jpg");
+}
+#index-gallery-w .img27{
+    grid-area: img27;
+    background-image: url("imgs/img/thumbs/Woodfloor/img27.jpg");
+}
+#index-gallery-w .img28{
+    grid-area: img28;
+    background-image: url("imgs/img/thumbs/Woodfloor/img28.jpg");
+}
+#index-gallery-w .img29{
+    grid-area: img29;
+    background-image: url("imgs/img/thumbs/Woodfloor/img29.jpg");
+} 
+
 
  /* --------------------------------------------------ALL Images--------------------------------------*/
 

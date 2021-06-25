@@ -92,10 +92,11 @@ body.Home {
 .grid-container {
 	display: grid;
 	grid-template-areas: 
-	'header header header'
-	'grid-title-1 grid-title-2 grid-title-3'
-	'grid-library-1 grid-library-2 grid-library-3'
-	'grid-item-1 grid-item-2 grid-item-3';
+	'header header'
+	'grid-title-1 grid-title-2'
+	'grid-library-1 grid-library-2'
+	'grid-item-1 grid-item-2';
+	justify-content: center;
 	padding: 10px;
 	margin-top: 250px;
 	grid-gap: 10px;
@@ -148,6 +149,9 @@ body.Home {
 	padding: 20px;
 	font-size: 20px;
 	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Contact Button */
@@ -264,10 +268,7 @@ body.Home {
 	'grid-item-1 '
 	'grid-title-2 '
 	'grid-library-2 '
-	'grid-item-2'
-	'grid-title-3 '
-	'grid-library-3 '
-	'grid-item-3';
+	'grid-item-2';
 	padding: 10px;
 	margin-top: 350px;
 	grid-gap: 10px;

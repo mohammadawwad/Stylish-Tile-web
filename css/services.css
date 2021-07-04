@@ -7,10 +7,39 @@ body.Home {
 }
 
 
-
 /* ----------------------------------------------------WEB VIEW */
 
 @media screen and (min-width: 800px){
+
+    .main-pic img{
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+    }
+    /* Overlaying Part for home page photos */
+    .overlay{
+        position: relative;
+        margin-top: 300px;
+        margin-left: 25%;
+        margin-right: 25%;
+        background-color: rgba(255, 255, 255, 0.562);
+        border: 10px solid rgb(255, 255, 255);
+        padding: 5px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 50%;
+    }
+    .overlay img{
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+
     /* Intro Text */
     .grid-container {
         display: grid;
@@ -103,6 +132,18 @@ body.Home {
 
 /*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
 @media screen and (max-width: 800px){
+    .main-pic img{
+        position: relative;
+        padding-top: 125px;
+        width: 100%;
+        height: auto;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+    /* Overlaying Part for home page photos */
+    .overlay{
+        display: none;
+    }
 
     .grid-container {
         display: grid;
@@ -111,7 +152,7 @@ body.Home {
         'grid-title-1 grid-title-1 grid-title-2 grid-title-2'
         'grid-title-3 grid-title-4 grid-title-4 grid-title-5';
         padding: 10px;
-        margin-top: 150px;
+        margin-top: 20px;
         grid-gap: 10px;
     }
     

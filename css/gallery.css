@@ -149,163 +149,168 @@
 
 /*------------------------------------------------------ PHONE VIEW ------------------------------------------------------ */
 @media screen and (max-width: 799px){
-        /*Gallery Container*/
-        #index-gallery-t, #index-gallery-h, #index-gallery-w,  #index-gallery-all{
-            position: relative;
-            padding-top: 20%;
-            padding-bottom: 20%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto;
-            grid-gap: 15px;
-            grid-template:
-                "img1 img2" 
-                "img3 img4"
-                "img5 img6"
-                "img7 img8"
-                "img9 img10"
-                "img11 img12"
-                "img13 img14"
-                "img15 img16"
-                "img17 img18"
-                "img19 img20"
-                "img21 img22"
-                "img23 img24"
-                "img25 img26"
-                "img27 img28"
-                "img29 img30"
-                "img31 img32"
-                "img33 img34"
-                "img35 img36"
-                "img37 img38"
-                "img39 img40"
-                ;
-        }
-    
-        #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-w .woodfloor-gallery-img , #index-gallery-all .all-gallery-img{
-            width: 120px;
-            height: 120px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            cursor: pointer;
-        }
-    
-    
-        /* Gallery image styling*/
-        .tile-gallery-img div , .hardwood-gallery-img div, .woodfloor-gallery-img div, .all-gallery-img div{
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            opacity: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .tile-gallery-img a , .hardwood-gallery-img a , .woodfloor-gallery-img a, .all-gallery-img a{
-            font-size: 10px;
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .woodfloor-gallery-img div:hover, .all-gallery-img div:hover{
-            opacity: 0.7;
-            transition: all ease-in-out 100ms;
-        }
-    
-        /* Popup window when clicked*/
-        .img-window{
-            margin-top: 5%;
-            width: 137vw;
-            height: 130vh;
-            background-color: rgba(0,0,0,0.7);
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            cursor: pointer;
-            display: flex;
-            /* justify-content: center; */
-            align-items: center;
-            z-index: 100;
-            -webkit-animation-name: fadeIn;
-            -webkit-animation-duration: 5s;
-            animation-name: fadeIn;
-        }
-        .img-window img{
-            max-height: 75vh;
-            max-width: 75vw;
-            margin-left: 9%;
-            margin-top: -25vh;
-            justify-content: center;
-            -webkit-animation-name: fadeIn;
-            -webkit-animation-duration: 5s;
-            animation-name: fadeIn;
-        }
 
-        @-webkit-keyframes fadeIn {
-            0% {opacity: 0;}
-            20% {opacity: 1;}
-        }
-        @keyframes fadeIn {
-            0% {opacity: 0;}
-            20% {opacity: 1;}
-        }
-    
-        /* Button Next */
-        .img-btn-next{
-            display: block;
-            margin-right: 15px;
-            padding: 0px 15px;
-            border-radius: 50%;
-            background-color: white;
-            position: fixed;
-            top: 50vh;
-            z-index: 500;
-            color: black;
-            cursor: pointer;
-            text-transform: uppercase;
-            font-size: 50px;
-            -webkit-tap-highlight-color: transparent;
-        }
-        .img-btn-next:hover {
-            opacity: 0.7;
-            transition: all ease-in-out 100ms;
-            transform: scale(1.08);
-        }
-        .img-btn-next:active{
-            opacity: 0.7;
-            transition: all ease-in-out 100ms;
-            transform: scale(0.95);
-            color: rgb(85, 109, 189);
-        }
-    
-        /* Button Prev */
-        .img-btn-prev {
-            display: block;
-            margin-left: 15px;
-            padding: 0px 15px;
-            border-radius: 50%;
-            background-color: white;
-            position: fixed;
-            top: 50vh;
-            z-index: 500;
-            color: black;
-            cursor: pointer;
-            text-transform: uppercase;
-            font-size: 50px;
-            -webkit-tap-highlight-color: transparent;
-        }
-        .img-btn-prev:hover {
-            opacity: 0.7;
-            transition: all ease-in-out 100ms;
-            transform: scale(1.08);
-        }
-        .img-btn-prev:active{
-            opacity: 0.7;
-            transition: all ease-in-out 100ms;
-            transform: scale(0.95);
-            color: rgb(85, 109, 189);
-        }
+    body{
+        background-color: white;
+    }
+
+    /*Gallery Container*/
+    #index-gallery-t, #index-gallery-h, #index-gallery-w,  #index-gallery-all{
+        position: relative;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        grid-template:
+            "img1 img2" 
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
+            "img9 img10"
+            "img11 img12"
+            "img13 img14"
+            "img15 img16"
+            "img17 img18"
+            "img19 img20"
+            "img21 img22"
+            "img23 img24"
+            "img25 img26"
+            "img27 img28"
+            "img29 img30"
+            "img31 img32"
+            "img33 img34"
+            "img35 img36"
+            "img37 img38"
+            "img39 img40"
+            ;
+    }
+
+    #index-gallery-t .tile-gallery-img, #index-gallery-h .hardwood-gallery-img, #index-gallery-w .woodfloor-gallery-img , #index-gallery-all .all-gallery-img{
+        width: 120px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+
+
+    /* Gallery image styling*/
+    .tile-gallery-img div , .hardwood-gallery-img div, .woodfloor-gallery-img div, .all-gallery-img div{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tile-gallery-img a , .hardwood-gallery-img a , .woodfloor-gallery-img a, .all-gallery-img a{
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .tile-gallery-img div:hover, .hardwood-gallery-img div:hover, .woodfloor-gallery-img div:hover, .all-gallery-img div:hover{
+        opacity: 0.7;
+        transition: all ease-in-out 100ms;
+    }
+
+    /* Popup window when clicked*/
+    .img-window{
+        margin-top: 5%;
+        width: 137vw;
+        height: 130vh;
+        background-color: rgba(0,0,0,0.7);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        cursor: pointer;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        z-index: 100;
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 5s;
+        animation-name: fadeIn;
+    }
+    .img-window img{
+        max-height: 75vh;
+        max-width: 75vw;
+        margin-left: 9%;
+        margin-top: -25vh;
+        justify-content: center;
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 5s;
+        animation-name: fadeIn;
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        20% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        20% {opacity: 1;}
+    }
+
+    /* Button Next */
+    .img-btn-next{
+        display: block;
+        margin-right: 15px;
+        padding: 0px 15px;
+        border-radius: 50%;
+        background-color: white;
+        position: fixed;
+        top: 50vh;
+        z-index: 500;
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 50px;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .img-btn-next:hover {
+        opacity: 0.7;
+        transition: all ease-in-out 100ms;
+        transform: scale(1.08);
+    }
+    .img-btn-next:active{
+        opacity: 0.7;
+        transition: all ease-in-out 100ms;
+        transform: scale(0.95);
+        color: rgb(85, 109, 189);
+    }
+
+    /* Button Prev */
+    .img-btn-prev {
+        display: block;
+        margin-left: 15px;
+        padding: 0px 15px;
+        border-radius: 50%;
+        background-color: white;
+        position: fixed;
+        top: 50vh;
+        z-index: 500;
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 50px;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .img-btn-prev:hover {
+        opacity: 0.7;
+        transition: all ease-in-out 100ms;
+        transform: scale(1.08);
+    }
+    .img-btn-prev:active{
+        opacity: 0.7;
+        transition: all ease-in-out 100ms;
+        transform: scale(0.95);
+        color: rgb(85, 109, 189);
+    }
 }
 
 

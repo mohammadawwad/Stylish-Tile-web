@@ -19,16 +19,16 @@ body.Home {
         grid-gap: 10px;
     }
 
-    .tile-btn-galleries, .hardwood-btn-galleries, .woodfloor-btn-galleries, .all-btn-galleries{
+    .tile-btn-galleries, .woodfloor-btn-galleries, .all-btn-galleries{
         background-color: rgb(62, 139, 228);
         border: none;
         height: 100%;
-        width: 60%;
+        width: 250px;
         font-size: 20px;
         color: white;
         transition: 0.5s;
     }
-    .tile-btn-galleries:hover, .hardwood-btn-galleries:hover, .woodfloor-btn-galleries:hover, .all-btn-galleries:hover{
+    .tile-btn-galleries:hover, .woodfloor-btn-galleries:hover, .all-btn-galleries:hover{
         color: #111;
         transition: 0.5s;
         background-color: transparent;
@@ -87,7 +87,7 @@ body.Home {
 	grid-gap: 10px;
 }
 
-.tile-btn-galleries, .hardwood-btn-galleries, .woodfloor-btn-galleries, .all-btn-galleries{
+.tile-btn-galleries, .woodfloor-btn-galleries, .all-btn-galleries{
     background-color: rgb(62, 139, 228);
     border: none;
     height: 100%;
@@ -96,7 +96,7 @@ body.Home {
     color: white;
     transition: 0.5s;
 }
-.tile-btn-galleries:hover, .hardwood-btn-galleries:hover, .woodfloor-btn-galleries:hover, .all-btn-galleries:hover{
+.tile-btn-galleries:hover, .woodfloor-btn-galleries:hover, .all-btn-galleries:hover{
     color: #111;
     transition: 0.5s;
     background-color: transparent;

@@ -121,6 +121,7 @@ body.Home {
 	position: relative;
 	margin: auto;
 	justify-content: center;
+	width: 456.703px;
 }
 
 .grid-library .btn{
@@ -152,6 +153,7 @@ body.Home {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+	width: 456.703px;
 }
 
 /* Contact Button */

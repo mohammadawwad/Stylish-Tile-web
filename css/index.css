@@ -110,7 +110,6 @@ body.Home {
 }
 
 .grid-container img:hover{
-	filter: grayscale(50%);
 	transform: scale(1.08);
 }
 
@@ -148,13 +147,66 @@ body.Home {
 .grid-item {
 	background-color: rgba(255, 255, 255, 0.8);
 	padding: 20px;
-	font-size: 20px;
+	font-size: 22px;
 	text-align: center;
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 456.703px;
 }
+
+/* Icon Section */
+.icon-container {
+	display: grid;
+	grid-template-areas: 
+	'header header header header header'
+	'icon-img-1 icon-img-2 icon-img-3 icon-img-4 icon-img-5'
+	'icon-title-1 icon-title-2 icon-title-3 icon-title-4 icon-title-5';
+	justify-content: center;
+	padding: 10px;
+	margin-top: 50px;
+	grid-gap: 10px;
+}
+
+/* Icon-Img */
+.icon-container img {
+    transition: 1s;
+    padding: 15px;
+    width: 100px;
+}
+
+.icon-container img:hover{
+	transform: scale(1.08);
+}
+
+/* Icon Picture */
+.icon-img .picture{
+	float: none;
+	display: flex;
+	position: relative;
+	margin: auto;
+	justify-content: center;
+	width: 100px;
+}
+
+.icon-main {
+	grid-area: header;
+	font-size: 36px;
+	text-align: center;
+	font-weight: 700;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+.icon-title {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 25px;
+	margin-top: 10px;
+	font-size: 24px;
+	text-align: center;
+}
+
+
 
 /* Contact Button */
 .contact-button{
@@ -284,7 +336,6 @@ body.Home {
 }
 
 .grid-container img:hover{
-	filter: grayscale(50%);
 	transform: scale(1.08);
 }
 
@@ -325,11 +376,66 @@ body.Home {
 	text-align: center;
 }
 
+/* Icon Section */
+.icon-container {
+	display: grid;
+	grid-template-areas: 
+	'header header'
+	'icon-img-1 icon-img-2'
+	'icon-title-1 icon-title-2'
+	'icon-img-3 icon-img-4'
+	'icon-title-3 icon-title-4'
+	'icon-img-5 icon-img-5'
+	'icon-title-5 icon-title-5';
+	padding: 10px;
+	margin-top: 50px;
+	grid-gap: 10px;
+}
+
+/* Library-Button Img */
+.icon-container img {
+    transition: 1s;
+    padding: 15px;
+    width: 100px;
+}
+
+.icon-container img:hover{
+	transform: scale(1.08);
+}
+
+/* Icon Picture */
+.icon-img .picture{
+	float: none;
+	display: flex;
+	position: relative;
+	margin: auto;
+	justify-content: center;
+}
+
+.icon-main {
+	grid-area: header;
+	font-size: 24px;
+	text-align: center;
+	font-weight: 700;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.icon-title {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 5px;
+	margin-top: 10px;
+	font-size: 20px;
+	text-align: center;
+}
+
+
 /* Contact Button */
 .contact-button{
 	position: relative;
 	transition: 0.5s;
 	width: 60%;
+	margin-top: 50px;
 	margin-left: 20%;
 	margin-right: 20%;
 	padding: 15px;
@@ -353,7 +459,7 @@ body.Home {
 	position: absolute;
 	top: 90%;
 	width: 100%;
-	height: 28%;
+	height: 23%;
 	background: #111;
 }
 

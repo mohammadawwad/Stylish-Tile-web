@@ -6,7 +6,7 @@
 
     /*Gallery Container*/
     #index-gallery-t, #index-gallery-h, #index-gallery-w , #index-gallery-all{
-        padding-top: 10%;
+        padding-top: 2%;
         padding-bottom: 5%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -157,7 +157,7 @@
     /*Gallery Container*/
     #index-gallery-t, #index-gallery-h, #index-gallery-w,  #index-gallery-all{
         position: relative;
-        padding-top: 20%;
+        padding-top: 5%;
         padding-bottom: 20%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
